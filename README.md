@@ -1,3 +1,6 @@
+# 项目简介
+分享最好用、最实用的ComfyUI工作流（``workflow``），最新、最前沿的研究成果和相应的自定义节点（`custom nodes`），实用的视频、文字教程和知识等。
+
 # 工作流分享
 2024-3-18我把最实用的工作流（workflow）都给毫无保留地分享给：[点击此处查看pysssss-workflows文件夹](./pysssss-workflows)
 
@@ -11,4 +14,18 @@
 | 6   | [4.0修复手部](pysssss-workflows/4.0修复手部.json)                                                 | 修复手部很好用                          |
 | 7   | [5.0扩图](pysssss-workflows/5.0扩图.json)                                                     | 用的fooocus的模型，所以效果很不错，功能也很像。      |
 | 8   | [6.0移除背景BRIA](pysssss-workflows/6.0移除背景BRIA.json)                                         | 描述移除背景BRIA的功能                    |
+
+
+# 用了都说好的custom nodes（自定义节点）
+
+| 序号  | custom nodes名称  | 网址                                          | 简介                                                                                                                      |
+| --- | --------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1   | ComfyUI-Manager | https://github.com/ltdrdata/ComfyUI-Manager | ComfyUI-Manager 是一个旨在提高 ComfyUI 可用性的扩展。它提供了安装、删除、禁用和启用 ComfyUI 各种自定义节点的管理功能。此外，该扩展还提供了一个中心功能和便利功能，以便访问 ComfyUI 内部的广泛信息。 |
+
+
+# 顶级开发者（他们贡献了最棒的custom nodes）
+[ZHO-ZHO-ZHO](https://github.com/ZHO-ZHO-ZHO)
+[ltdrdata](https://github.com/ltdrdata)
+
+
 
