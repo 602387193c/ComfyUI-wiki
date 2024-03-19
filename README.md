@@ -15,22 +15,36 @@
 | 7   | [5.0扩图](pysssss-workflows/5.0扩图.json)                                                     | 用的fooocus的模型，所以效果很不错，功能也很像。      |
 | 8   | [6.0移除背景BRIA](pysssss-workflows/6.0移除背景BRIA.json)                                         | 描述移除背景BRIA的功能                    |
 
-
 # 用了都说好的custom nodes（自定义节点）
 
-| 序号  | custom nodes名称  | 网址                                          | 简介                                                                                                                      |
-| --- | --------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| 1   | ComfyUI-Manager | https://github.com/ltdrdata/ComfyUI-Manager | ComfyUI-Manager 是一个旨在提高 ComfyUI 可用性的扩展。它提供了安装、删除、禁用和启用 ComfyUI 各种自定义节点的管理功能。此外，该扩展还提供了一个中心功能和便利功能，以便访问 ComfyUI 内部的广泛信息。 |
+| 序号  | Custom Nodes                                                                      | 简介（最有用的功能）                                                                                                                     |
+| --- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)                    | 安装、删除、禁用和启用 ComfyUI 各种自定义节点的管理功能。此外，该扩展还提供了一个中心功能和便利功能，以便访问 ComfyUI 内部的广泛信息。                                                   |
+| 2   | [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) | 图像源：[Image Feed](https://github.com/pythongosssss/ComfyUI-Custom-Scripts?tab=readme-ov-file#image-feed)<br>添加一个面板，显示当前会话中生成的图像 |
+
+# AIGC前沿技术
+（图像、视频、音频、数字人、3D等生成）
+
+| 序号  | 项目名称及网址                                             | 介绍                                | huggingface demo（在线生成）                                             |
+| --- | --------------------------------------------------- | --------------------------------- | ------------------------------------------------------------------ |
+| 1   | [InstantID](https://github.com/InstantID/InstantID) | 可实现使用单张图片进行ID保持生成的最先进方法，支持各种下游任务。 | [InstantID demo](https://huggingface.co/spaces/InstantX/InstantID) |
+| 2   | [AnyText](https://github.com/tyxsspa/AnyText)       | 多语言（包括汉字！）视觉文本生成与编辑               | [AnyText demo](https://huggingface.co/spaces/modelscope/AnyText)   |
 
 
 # 顶级开发者（他们贡献了最棒的custom nodes）
 
-| 序号  | 开发者                                           | 简介  |
-| --- | --------------------------------------------- | --- |
-| 1   | [ZHO-ZHO-ZHO](https://github.com/ZHO-ZHO-ZHO) |     |
-| 2   | [ltdrdata](https://github.com/ltdrdata)<br>   |     |
+| 序号  | 开发者                                           | 简介（主要贡献）                                                                                                                                                                                                                  |
+| --- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [ZHO-ZHO-ZHO](https://github.com/ZHO-ZHO-ZHO) | [BRIA_RMBG 1.4 in ComfyUI](https://github.com/ZHO-ZHO-ZHO/ComfyUI-BRIA_AI-RMBG)：BRIA 开发的目前最好的背景去除模型，已支持批量处理（可去除视频背景）<br>[ComfyUI InstantID](https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID): 仅需一张图就可实现高质量的角色保持！多种风格随心变！ |
+| 2   | [ltdrdata](https://github.com/ltdrdata)<br>   | [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)<br> [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)                                                                                 |
+| 3   | [lllyasviel](https://github.com/lllyasviel)   | [Fooocus](https://github.com/lllyasviel/Fooocus)<br>[stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)                                                                            |
+|     |                                               |                                                                                                                                                                                                                           |
+
+# 工作流、模型、图片生成网站
 
 
-
-
-
+| 类别           | 网址                                        | 说明  |
+| ------------ | ----------------------------------------- | --- |
+| 工作流分享        | - [OpenArt](https://openart.ai/workflows) |     |
+| 模型分享（也有工作流等） | - [civitai](https://civitai.com/)         |     |
+| 图片生成         | -                                         |     |
