@@ -47,4 +47,4 @@
 | ------------ | ----------------------------------------- | --- |
 | 工作流分享        | - [OpenArt](https://openart.ai/workflows) |     |
 | 模型分享（也有工作流等） | - [civitai](https://civitai.com/)         |     |
-| 图片生成         | -                                         |     |
+| 图片生成         | - [ideogram](https://ideogram.ai/)        |     |
