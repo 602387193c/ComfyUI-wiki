@@ -46,14 +46,14 @@
 | 3   | [lllyasviel](https://github.com/lllyasviel)   | [Fooocus](https://github.com/lllyasviel/Fooocus)<br>[stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)<br>[ControlNet](https://github.com/lllyasviel/ControlNet)<br>                                                                                                                                                                                            |
 | 4   | [HumanAIGC](https://github.com/HumanAIGC)<br> | 阿里的开源项目，画了很多饼，没一个正儿八经开源了！但是我们还是相信他会开源？<br>[EMO](https://github.com/HumanAIGC/EMO)：情感肖像活灵活现：在弱条件下利用音频到视频扩散模型生成富有表情的肖像视频<br>[AnimateAnyone](https://github.com/HumanAIGC/AnimateAnyone)：是的，有了这个谁都可以跳科目三，但就是不代码出来啊！<br>[OutfitAnyone](https://github.com/HumanAIGC/OutfitAnyone)：想换装？以后淘宝买衣服，让它给你换来看看再买吧。这个有huggingface demo，[OutfitAnyone demo](https://huggingface.co/spaces/HumanAIGC/OutfitAnyone)<br> |
 
-# ⬇️工作流、模型下载
+# ⬇️工作流、模型下载，社区交流
 
 | 类别           | 网址                                      | 说明                                |     |
 | ------------ | --------------------------------------- | --------------------------------- | --- |
 | 工作流分享        | [OpenArt](https://openart.ai/workflows) | 很多大佬分享了海量的高质量工作流。                 |     |
 | 模型分享（也有工作流等） | [civitai](https://civitai.com/)         | 搜索、下载和分享各种 AI 绘画模型，最齐全的网站，好像没有之一？ |     |
 
-# 🌐图片、视频、音乐、3D数字人生成网站
+# 🌐图片、视频、音乐、3D模型、数字人…生成网站
 
 | 图片生成 | [ideogram](https://ideogram.ai/)            | 这个网站生成的图片质量不错，可以生成文字。他们的模型也在不断迭代中。                                                       |
 | ---- | ------------------------------------------- | ---------------------------------------------------------------------------------------- |
