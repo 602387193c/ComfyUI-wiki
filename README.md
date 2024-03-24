@@ -15,18 +15,17 @@
 | 7   | [5.0扩图](pysssss-workflows/5.0扩图.json)                                                     | 用的[Fooocus](https://github.com/lllyasviel/Fooocus)的模型，所以效果很不错，功能也很像。                                                                |                                                                                                                                            |
 | 8   | [6.0移除背景BRIA](pysssss-workflows/6.0移除背景BRIA.json)                                         | 高效移除背景，速度极快，当然太复杂的图片，还是不行的。不想安装可以直接用这个**huggingface demo**：[BRIA-RMBG-1.4 demo](https://huggingface.co/spaces/briaai/BRIA-RMBG-1.4) |                                                                                                                                            |
 
-# 👍用了都说好的`custom nodes`（自定义节点）
-
-## 📈custom nodes排行榜
-[nodecafe](https://www.nodecafe.org/)这个网站，由[comfyui-workspace-manager](https://github.com/11cafe/comfyui-workspace-manager)构建，一个类似于Pypi（用于发布、共享和安装Python包的官方第三方库）的comfyui自定义节点库wiki，根据开源`custom nodes`获得的stars⭐排名！
+# 👍custom nodes排行榜
+## 📈排行榜网站[nodecafe](https://www.nodecafe.org/)
+看最新的custom nodes的⭐排行榜，请看这个网站📈[nodecafe](https://www.nodecafe.org/)，由[comfyui-workspace-manager](https://github.com/11cafe/comfyui-workspace-manager)构建，一个类似于Pypi（用于发布、共享和安装Python包的官方第三方库）的comfyui自定义节点库wiki，根据开源`custom nodes`获得的stars⭐排名！
+## 🔍 亲测！强力推荐！
+我自己亲测后，觉得是必装的，且在用的`custom nodes`
 
 | 序号（实时⭐）                                                                            | Custom Nodes                                                                          | 简介（最有用的功能）                                                                                                                     |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | 1<br>![](https://img.shields.io/github/stars/ltdrdata/ComfyUI-Manager)             | [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)                        | 安装、删除、禁用和启用 ComfyUI 各种自定义节点的管理功能。此外，该扩展还提供了一个中心功能和便利功能，以便访问 ComfyUI 内部的广泛信息。                                                   |
 | 2<br>![](https://img.shields.io/github/stars/pythongosssss/ComfyUI-Custom-Scripts) | [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)<br> | 图像源：[Image Feed](https://github.com/pythongosssss/ComfyUI-Custom-Scripts?tab=readme-ov-file#image-feed)<br>添加一个面板，显示当前会话中生成的图像 |
 | 3<br>![](https://img.shields.io/github/stars/Nuked88/ComfyUI-N-Sidebar)            | [ComfyUI-N-Sidebar](https://github.com/Nuked88/ComfyUI-N-Sidebar)<br><br>             | 提供了一个简单的侧边栏，支持节点的拖放、收藏、搜索，以及类别的展开/收起等功能，极大增强了界面交互体验。                                                                           |
-
-
 # 💡AIGC前沿技术
 （图像、视频、音频、数字人、3D等生成）
 
