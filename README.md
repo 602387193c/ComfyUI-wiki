@@ -14,6 +14,7 @@
 | 6   | [4.0修复手部](pysssss-workflows/4.0修复手部.json)                                                 | 修复手部很好用                                                                                                                             |                                                                                                                                            |
 | 7   | [5.0扩图](pysssss-workflows/5.0扩图.json)                                                     | 用的[Fooocus](https://github.com/lllyasviel/Fooocus)的模型，所以效果很不错，功能也很像。                                                                |                                                                                                                                            |
 | 8   | [6.0移除背景BRIA](pysssss-workflows/6.0移除背景BRIA.json)                                         | 高效移除背景，速度极快，当然太复杂的图片，还是不行的。不想安装可以直接用这个**huggingface demo**：[BRIA-RMBG-1.4 demo](https://huggingface.co/spaces/briaai/BRIA-RMBG-1.4) |                                                                                                                                            |
+| 9   | [9.0InstantID-换脸到任何风格图上](pysssss-workflows/9.0InstantID-换脸到任何风格图上.json)                   | 换脸到任何风格图上，这个换脸是真好玩。                                                                                                                 |                                                                                                                                            |
 
 # 👍custom nodes排行榜
 ## 📈排行榜网站[nodecafe](https://www.nodecafe.org/)
