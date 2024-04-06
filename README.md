@@ -2,7 +2,7 @@
 
 ![](images/Banner_Image.jpg)
 
-分享最好用、最实用的ComfyUI工作流（``workflow``），最新、最前沿的研究成果和相应的自定义节点（`custom nodes`），实用的视频、文字教程和知识等。
+分享最好用、最实用的ComfyUI工作流，最新、最前沿的研究成果和相应的自定义节点（`custom nodes`），实用的视频、文字教程和知识等。
 # 📊工作流分享
 我把最实用的工作流（workflow）都给毫无保留地免费分享给所有需要的人：[点击此处查看pysssss-workflows文件夹](./pysssss-workflows)
 
