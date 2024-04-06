@@ -1,6 +1,6 @@
 # 📄项目简介
 
-![](images/Banner_Image.jpg)
+![](images/Banner_Image1.jpg)
 
 分享最好用、最实用的ComfyUI工作流，最新、最前沿的研究成果和相应的自定义节点（`custom nodes`），实用的视频、文字教程和知识等。
 # 📊工作流分享
