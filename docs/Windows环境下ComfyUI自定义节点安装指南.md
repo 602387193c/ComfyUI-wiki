@@ -37,7 +37,7 @@ cd C:\ComfyUI_test\ComfyUI_windows_portable\ComfyUI
 > 执行相应的命令，这里我就不详细说了，自学下。不同的项目、不同的电脑有不同的要求。这条命令从 PyTorch 官方网站下载并安装三个包及其依赖项。
 > 我执行的是：
 
-![](images/pytorch-install.png)
+![](images/pytorch-install.jpg)
 
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
