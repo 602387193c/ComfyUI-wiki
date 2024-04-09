@@ -33,23 +33,26 @@ cd C:\ComfyUI_test\ComfyUI_windows_portable\ComfyUI
 ```
 > [!pytorch]
 > 到这里找到你的pytorch版本
-> https://pytorch.org/get-started/previous-versions/
-> 执行相应的命令，这里我就不详细说了，自学下。不同的项目、不同的电脑有不同的要求。
+> https://pytorch.org/get-started/locally/
+> 执行相应的命令，这里我就不详细说了，自学下。不同的项目、不同的电脑有不同的要求。这条命令从 PyTorch 官方网站下载并安装三个包及其依赖项。
 > 我执行的是：
+
+![](images/pytorch-install.png)
+
 ```
-pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
-继续
+⏩继续
 ```
 pip install -r requirements.txt
 ```
-完成以后，就可以用这个运行了
+🏃完成以后，就可以用这个运行了
 ```
 python main.py
 ```
 ## 4️⃣ 一劳永逸的启动方式
 
-完成上述步骤后,今后每次启动ComfyUI只需:
+🏖️完成上述步骤后,今后每次启动ComfyUI只需:
 
 1. 打开 `Anaconda Prompt` 
 2. 粘贴以下代码并按两次回车:
