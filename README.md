@@ -45,7 +45,7 @@
 | [comfy-image-saver](https://github.com/giriss/comfy-image-saver)<br>![GitHub Repo stars](https://img.shields.io/github/stars/giriss/comfy-image-saver)                                  | 想要的保存图片的功能都有。                                                                                                                  |                                                                                                                                                     |
 ## 🗺️安装指南
 
-如果ComfyUI安装了过多组件,可能会出现环境冲突等问题。我推荐使用Anaconda创建虚拟环境来运行ComfyUI,避免潜在的冲突。就算你的虚拟环境也装的太多了，引起了冲突，你还可以再创建一个虚拟环境来专门运行起你现在很需要运行起来的工作流。具体我写了份详细的文档，请批评指正：[Windows环境下ComfyUI自定义节点安装指南](docs/Windows环境下ComfyUI自定义节点安装指南.md)
+如果ComfyUI安装了过多组件,可能会出现环境冲突等问题。我推荐使用Anaconda创建虚拟环境来运行ComfyUI,避免潜在的冲突。就算你的虚拟环境也装的太多了，引起了冲突，你还可以再创建一个虚拟环境来专门运行起你现在很需要运行起来的工作流。具体我写了份详细的文档，请批评指正：[Windows环境下ComfyUI自定义节点安装指南](docs/Windows环境下ComfyUI自定义节点安装指南.md)，视频解释：[ComfyUI报错的终极解决方案！](https://www.bilibili.com/video/BV1Up421Q7YA/?vd_source=7351bb1ce0a307c41b60b64ca036a240)
 
 # 💡AIGC前沿技术
 （图像、视频、音频、数字人、3D等生成）

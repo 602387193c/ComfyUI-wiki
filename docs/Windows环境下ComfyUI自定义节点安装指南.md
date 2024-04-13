@@ -13,6 +13,9 @@
 
 模型文件放置在 `C:\ComfyUI_test\ComfyUI_windows_portable\ComfyUI\models` 目录下即可使用。整个过程非常简单,甚至比使用整合包还要方便。
 
+推荐下载软件，免费且强大！
+[neatdownloadmanager](https://www.neatdownloadmanager.com/index.php/en/)
+
 ## 2️⃣ 确保网络畅通并更新ComfyUI
 
 第一次安装时,可能会因网络问题导致无法顺利下载所需组件。本人使用付费VPN [Astrill](https://www.astrill.com/) (非广告)连接USA-Chicage 10GB节点,并开启WireGuard全局代理以保证网络畅通。
