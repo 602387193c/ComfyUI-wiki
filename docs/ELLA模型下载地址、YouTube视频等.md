@@ -1,4 +1,4 @@
-
+# ELLA模型下载地址、YouTube视频等
 YouTube视频指南: [https://youtu.be/_Pr7aFkkAvY](https://youtu.be/_Pr7aFkkAvY)
 ELLA:为扩散模型配备大型语言模型，以增强语义对齐
 CLIP总是出错！如果你要求一个蓝熊戴红帽，很可能得到一个红熊戴蓝帽。使用ELLA就不会这样了！现在你可以提供长而详细的提示，并确实得到你所要求的内容。只是别指望得到完美的手部
