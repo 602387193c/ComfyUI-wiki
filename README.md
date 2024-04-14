@@ -96,4 +96,5 @@
 
 # 💡小技巧
 
-**1️⃣**[ComfyUI如何共享模型文件](docs/🔗ComfyUI如何共享模型文件.md)
+**1️⃣**[ComfyUI如何共享模型文件](docs/🔗ComfyUI如何共享模型文件.md) 📺视频解说：[懒人必学!ComfyUI模型共享设置,省空间又省心!](https://www.bilibili.com/video/BV1Xt42177m8/?vd_source=7351bb1ce0a307c41b60b64ca036a240)
+**2️⃣**[Windows环境下ComfyUI自定义节点安装指南](docs/Windows环境下ComfyUI自定义节点安装指南.md)，📺视频解说：[ComfyUI报错的终极解决方案！](https://www.bilibili.com/video/BV1Up421Q7YA/?vd_source=7351bb1ce0a307c41b60b64ca036a240)
