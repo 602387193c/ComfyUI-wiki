@@ -65,7 +65,8 @@
 | [ELLA](https://github.com/TencentQQGYLab/ELLA)<br>![GitHub Repo stars](https://img.shields.io/github/stars/TencentQQGYLab/ELLA)<br>                                                                | 让大语言模型LLM赋能AI绘画                                                                                                                       |                                                                                                     | [ComfyUI_ELLA](https://github.com/ExponentialML/ComfyUI_ELLA)<br>![GitHub Repo stars](https://img.shields.io/github/stars/ExponentialML/ComfyUI_ELLA)<br>                                                                                                     |
 | [BrushNet](https://github.com/TencentARC/BrushNet)<br>![GitHub Repo stars](https://img.shields.io/github/stars/TencentARC/BrushNet)<br>                                                            | 原版局部重绘效果不错，但是comfyui移植的2个版本效果不是很好。                                                                                                    |                                                                                                     | 版本1[ComfyUI-BrushNet-Wrapper](https://github.com/kijai/ComfyUI-BrushNet-Wrapper)<br>版本2[ComfyUI-BrushNet](https://github.com/nullquant/ComfyUI-BrushNet)<br>                                                                                                  |
 | [RVC变声](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)<br>![GitHub Repo stars](https://img.shields.io/github/stars/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)<br> | RVC，我视频用的变声器，(#^.^#)。                                                                                                                 | [下载地址](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/releases)贴心的百度网盘，解压即用！ |                                                                                                                                                                                                                                                               |
-| [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog)                                                                     | 申请 API ：[Stability API key](https://platform.stability.ai/account/keys)<br>在线生成：[每日免费3张的在线网址](https://sdxlturbo.ai/stable-diffusion3) | [SD3 demo](https://huggingface.co/spaces/latentcat/sd3-api)                                         | [ComfyUI-StableDiffusion3-API](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API)                                                                                                                                                                   |
+| [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog)                                                                     | 申请 API ：[Stability API key](https://platform.stability.ai/account/keys)<br>在线生成：[每日免费3张的在线网址](https://sdxlturbo.ai/stable-diffusion3) | [SD3 demo](https://huggingface.co/spaces/latentcat/sd3-api)                                         | 官方版本：[ComfyUI-SAI_API](https://github.com/Stability-AI/ComfyUI-SAI_API)<br>ZHO版本：[ComfyUI-StableDiffusion3-API](https://github.com/ZHO-ZHO-ZHO/ComfyUI-StableDiffusion3-API)                                                                                  |
+| [PixArt-sigma](https://github.com/PixArt-alpha/PixArt-sigma)<br>![GitHub Repo stars](https://img.shields.io/github/stars/PixArt-alpha/PixArt-sigma)<br>                                            | 华为诺亚方舟实验室、大连理工大学、香港大学合作开发的项目。<br>[亲测可用的简化安装教程](docs/PIXART-Σ基于扩散Transformer的弱到强训练方法,用于4K文本到图像生成.md)                                   | [PixArt-Sigma demo](https://huggingface                                                             | [PixArt-Sigma视频介绍](https://www.bilibili.com/video/BV1bt421j7aW/?spm_id_from=333.999.0.0)                                                                                                                                                                      |
 | [PixArt-sigma](https://github.com/PixArt-alpha/PixArt-sigma)<br>![GitHub Repo stars](https://img.shields.io/github/stars/PixArt-alpha/PixArt-sigma)<br>                                            | 华为诺亚方舟实验室、大连理工大学、香港大学合作开发的项目。<br>[亲测可用的简化安装教程](docs/PIXART-Σ基于扩散Transformer的弱到强训练方法,用于4K文本到图像生成.md)                                   | [PixArt-Sigma demo](https://huggingface.co/spaces/PixArt-alpha/PixArt-Sigma)                        | [ComfyUI_ExtraModels](https://github.com/city96/ComfyUI_ExtraModels)<br>📖[官方-如何在ComfyUI中使用PixArt](https://github.com/PixArt-alpha/PixArt-alpha/blob/master/asset/docs/pixart_comfyui.md)<br>工作流[12-PixArt-sigma](pysssss-workflows/12-PixArt-sigma.json)<br> |
 
 
@@ -90,6 +91,7 @@
 | [Nerdy Rodent](https://www.youtube.com/@NerdyRodent/videos)     | 【Youtube大佬】手把手教你用命令行安装最新的AI项目                                                           |     |
 | [Latent Vision](https://www.youtube.com/@latentvision/videos)   | 【Youtube大佬】[ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)的作者 |     |
 | [Olivio Sarikas](https://www.youtube.com/@OlivioSarikas/videos) | 【Youtube大佬】做个SD和ComfyUI都能有20万粉丝！                                                        |     |
+| [Scott Detweiler](https://www.youtube.com/@sedetweiler)         | 【Youtube大佬】Stability.ai的首席质量保证工程师，内部员工真是排面，他的视频挺好的，但是后面视频全部要收费了。                        |     |
 
 # 🌐图片、视频、音乐、3D模型、数字人…生成网站
 
@@ -108,3 +110,29 @@
 | **1️⃣**[ComfyUI如何共享模型文件](docs/🔗ComfyUI如何共享模型文件.md)                     | [懒人必学!ComfyUI模型共享设置,省空间又省心!](https://www.bilibili.com/video/BV1Xt42177m8/?vd_source=7351bb1ce0a307c41b60b64ca036a240) |
 | **2️⃣**[Windows环境下ComfyUI自定义节点安装指南](docs/Windows环境下ComfyUI自定义节点安装指南.md) | [ComfyUI报错的终极解决方案！](https://www.bilibili.com/video/BV1Up421Q7YA/?vd_source=7351bb1ce0a307c41b60b64ca036a240)          |
 
+# 👽ComfyUI快捷键
+
+| 快捷键                       | 说明                              |
+| ------------------------- | ------------------------------- |
+| Ctrl + Enter              | 将当前图添加到生成队列                     |
+| Ctrl + Shift + Enter      | 将当前图添加到生成队列的第一位                 |
+| Ctrl + Z/Ctrl + Y         | 撤销/重做                           |
+| Ctrl + S                  | 保存工作流                           |
+| Ctrl + O                  | 加载工作流                           |
+| Ctrl + A                  | 选择所有节点                          |
+| Alt + C                   | 折叠/展开选中的节点                      |
+| Ctrl + M                  | 静音/取消静音选中的节点                    |
+| Ctrl + B                  | 旁路选中的节点（相当于从图中移除节点并重新连接线路）      |
+| Delete/Backspace          | 删除选中的节点                         |
+| Ctrl + Delete/Backspace   | 删除当前图                           |
+| Space                     | 按住空格键并移动鼠标可以移动画布                |
+| Ctrl/Shift + Click        | 将点击的节点添加到选择中                    |
+| Ctrl + C/Ctrl + V         | 复制和粘贴选中的节点（不保持与未选中节点输出的连接）      |
+| Ctrl + C/Ctrl + Shift + V | 复制和粘贴选中的节点（保持未选中节点输出与粘贴节点输入的连接） |
+| Shift + Drag              | 同时移动多个选中的节点                     |
+| Ctrl + D                  | 加载默认图                           |
+| Q                         | 切换队列的可见性                        |
+| H                         | 切换历史记录的可见性                      |
+| R                         | 刷新图                             |
+| Double-Click LMB          | 打开节点快速搜索面板                      |
+对于 macOS 用户，Ctrl 也可以替换为 Cmd
