@@ -6,6 +6,15 @@
 
 ---
 
+# 🌍ComfyUI门户
+
+| 赏析、借鉴                                                      | 官方、GitHub                                                      | 优质视频                                                            | 资源                                      |
+| ---------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------- |
+| [ideogram](https://ideogram.ai/)                           | [ComfyUI](https://github.com/comfyanonymous/ComfyUI)           | [Nerdy Rodent](https://www.youtube.com/@NerdyRodent/videos)     | [OpenArt](https://openart.ai/workflows) |
+| [midjourney-showcase](https://www.midjourney.com/showcase) | [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager) | [Latent Vision](https://www.youtube.com/@latentvision/videos)   | [civitai](https://civitai.com/)         |
+|                                                            |                                                                | [Olivio Sarikas](https://www.youtube.com/@OlivioSarikas/videos) |                                         |
+|                                                            |                                                                | [Scott Detweiler](https://www.youtube.com/@sedetweiler)         |                                         |
+
 # 📊工作流分享
 
 我把最实用的工作流（workflow）都给毫无保留地免费分享给所有需要的人：[点击此处查看pysssss-workflows文件夹](./pysssss-workflows)
@@ -102,7 +111,6 @@
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | [haiper](https://app.haiper.ai/explore)                                                             | 【生成视频】个人觉得生成的效果比什么[runway](https://runwayml.com/)、[pika](https://pika.art/)要好啊！就是2秒时间太短。 |
 | [suno](https://app.suno.ai)<br>[udio](https://www.udio.com/)<br>[elevenlabs](https://elevenlabs.io) | 【生成音乐、声音】音乐生成界的chatgpt？                                                                  |
-|                                                                                                     | 【生成音乐】                                                                                   |
 | [heygen主页](https://app.heygen.com/home)<br>                                                         | 【数字人】一个云端视频创作平台，提供了视频编辑（**视频翻译**）、AI生成内容（**数字人**）、个性化定制、模板场景库等功能，适合各种背景和技能水平的用户使用。       |
 | [Tripo3D](https://www.tripo3d.ai/)                                                                  | 【生成3D模型】生成的3D模型效果挺不错的，在不断迭代中。                                                            |
 
