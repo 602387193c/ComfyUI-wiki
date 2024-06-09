@@ -1,0 +1,1105 @@
+{
+  "last_node_id": 43,
+  "last_link_id": 40,
+  "nodes": [
+    {
+      "id": 21,
+      "type": "DiffusersPipelineLoader",
+      "pos": [
+        10,
+        70
+      ],
+      "size": {
+        "0": 240,
+        "1": 190
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "PIPELINE",
+          "type": "PIPELINE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            15,
+            16
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            17
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DiffusersPipelineLoader"
+      },
+      "widgets_values": [
+        "ckpts",
+        "disable",
+        "disable",
+        "ksampler"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 33,
+      "type": "CLIPTextEncode",
+      "pos": [
+        300,
+        1160
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 25
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 29,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            19
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "错误的眼睛，糟糕的人脸，毁容，糟糕的艺术，变形，多余的肢体，模糊的颜色，模糊，重复，病态，残缺,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 32,
+      "type": "CLIPTextEncode",
+      "pos": [
+        300,
+        1110
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 24
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 28,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            18
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Vector art style image of a very happy rabbit wearing a lovely blue jumper and black, high-heeled shoes whilst exploring the moon at night. He comes across a small, old, wooden bridge on his journeys and decides to stop on it to gaze at the wonderful, lunar landscape. #pixelart"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 25,
+      "type": "CLIPTextEncode",
+      "pos": [
+        270,
+        70
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 15
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 30,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            2
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "Vector art style image of a very happy rabbit wearing a lovely blue jumper and black, high-heeled shoes whilst exploring the moon at night. He comes across a small, old, wooden bridge on his journeys and decides to stop on it to gaze at the wonderful, lunar landscape. #pixelart"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 26,
+      "type": "CLIPTextEncode",
+      "pos": [
+        270,
+        120
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 16
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 31,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            3
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "错误的眼睛，糟糕的人脸，毁容，糟糕的艺术，变形，多余的肢体，模糊的颜色，模糊，重复，病态，残缺,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 35,
+      "type": "VAEDecode",
+      "pos": [
+        790,
+        1080
+      ],
+      "size": {
+        "0": 140,
+        "1": 50
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 21
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 36,
+      "type": "PreviewImage",
+      "pos": [
+        950,
+        1080
+      ],
+      "size": {
+        "0": 970,
+        "1": 880
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 22
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 28,
+      "type": "VAEDecode",
+      "pos": [
+        780,
+        70
+      ],
+      "size": {
+        "0": 140,
+        "1": 50
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 29,
+      "type": "PreviewImage",
+      "pos": [
+        950,
+        70
+      ],
+      "size": {
+        "0": 970,
+        "1": 880
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 41,
+      "type": "Anything Everywhere",
+      "pos": [
+        540,
+        840
+      ],
+      "size": {
+        "0": 170,
+        "1": 30
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "LATENT",
+          "type": "*",
+          "link": 32,
+          "color_on": "#FF9CF9"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Anything Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [],
+      "color": "#b068ab",
+      "bgcolor": "#9c5497"
+    },
+    {
+      "id": 27,
+      "type": "EmptyLatentImage",
+      "pos": [
+        320,
+        840
+      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            32
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "color": "#b068ab",
+      "bgcolor": "#9c5497"
+    },
+    {
+      "id": 39,
+      "type": "PrimitiveNode",
+      "pos": [
+        10,
+        580
+      ],
+      "size": {
+        "0": 910,
+        "1": 180
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            29,
+            31
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "错误的眼睛，糟糕的人脸，毁容，糟糕的艺术，变形，多余的肢体，模糊的颜色，模糊，重复，病态，残缺,"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 24,
+      "type": "KSampler",
+      "pos": [
+        520,
+        70
+      ],
+      "size": {
+        "0": 240,
+        "1": 234
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 14
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 2
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 3
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            7
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        247800297465169,
+        "randomize",
+        30,
+        6,
+        "ddim",
+        "ddim_uniform",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 31,
+      "type": "KSampler",
+      "pos": [
+        530,
+        1080
+      ],
+      "size": {
+        "0": 240,
+        "1": 234
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 23
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 18
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 19
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "seed"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            21
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        511546344032725,
+        "randomize",
+        30,
+        6,
+        "ddim",
+        "ddim_uniform",
+        1
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 30,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -70,
+        1070
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            23
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            24,
+            25
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            26
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "SDXL/wyvernmix15XL_xlV18.safetensors"
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 42,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -260,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "1",
+        1
+      ]
+    },
+    {
+      "id": 43,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": -260,
+        "1": 1000,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "2",
+        1
+      ]
+    },
+    {
+      "id": 40,
+      "type": "Seed Everywhere",
+      "pos": [
+        20,
+        870
+      ],
+      "size": {
+        "0": 280,
+        "1": 82
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed Everywhere",
+        "group_restricted": 0,
+        "color_restricted": 0
+      },
+      "widgets_values": [
+        991710080976084,
+        "randomize"
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 38,
+      "type": "PrimitiveNode",
+      "pos": [
+        10,
+        350
+      ],
+      "size": {
+        "0": 910,
+        "1": 180
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            28,
+            30
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "Vector art style image of a very happy rabbit wearing a lovely blue jumper and black, high-heeled shoes whilst exploring the moon at night. He comes across a small, old, wooden bridge on his journeys and decides to stop on it to gaze at the wonderful, lunar landscape. #pixelart"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    }
+  ],
+  "links": [
+    [
+      2,
+      25,
+      0,
+      24,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      3,
+      26,
+      0,
+      24,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7,
+      24,
+      0,
+      28,
+      0,
+      "LATENT"
+    ],
+    [
+      9,
+      28,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      21,
+      1,
+      24,
+      0,
+      "MODEL"
+    ],
+    [
+      15,
+      21,
+      2,
+      25,
+      0,
+      "CLIP"
+    ],
+    [
+      16,
+      21,
+      2,
+      26,
+      0,
+      "CLIP"
+    ],
+    [
+      17,
+      21,
+      3,
+      28,
+      1,
+      "VAE"
+    ],
+    [
+      18,
+      32,
+      0,
+      31,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      19,
+      33,
+      0,
+      31,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      21,
+      31,
+      0,
+      35,
+      0,
+      "LATENT"
+    ],
+    [
+      22,
+      35,
+      0,
+      36,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      30,
+      0,
+      31,
+      0,
+      "MODEL"
+    ],
+    [
+      24,
+      30,
+      1,
+      32,
+      0,
+      "CLIP"
+    ],
+    [
+      25,
+      30,
+      1,
+      33,
+      0,
+      "CLIP"
+    ],
+    [
+      26,
+      30,
+      2,
+      35,
+      1,
+      "VAE"
+    ],
+    [
+      28,
+      38,
+      0,
+      32,
+      1,
+      "STRING"
+    ],
+    [
+      29,
+      39,
+      0,
+      33,
+      1,
+      "STRING"
+    ],
+    [
+      30,
+      38,
+      0,
+      25,
+      1,
+      "STRING"
+    ],
+    [
+      31,
+      39,
+      0,
+      26,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      27,
+      0,
+      41,
+      0,
+      "LATENT"
+    ],
+    [
+      33,
+      27,
+      0,
+      31,
+      3,
+      "LATENT"
+    ],
+    [
+      34,
+      40,
+      0,
+      31,
+      4,
+      "INT"
+    ],
+    [
+      35,
+      27,
+      0,
+      24,
+      3,
+      "LATENT"
+    ],
+    [
+      36,
+      40,
+      0,
+      24,
+      4,
+      "INT"
+    ],
+    [
+      37,
+      27,
+      0,
+      24,
+      3,
+      "LATENT"
+    ],
+    [
+      38,
+      40,
+      0,
+      24,
+      4,
+      "INT"
+    ],
+    [
+      39,
+      27,
+      0,
+      31,
+      3,
+      "LATENT"
+    ],
+    [
+      40,
+      40,
+      0,
+      31,
+      4,
+      "INT"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "SDXL",
+      "bounding": [
+        -80,
+        980,
+        2080,
+        1020
+      ],
+      "color": "#1c71d8",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Group",
+      "bounding": [
+        0,
+        0,
+        1970,
+        964
+      ],
+      "color": "#26a269",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650706,
+      "offset": [
+        871.8991486825742,
+        30.294115070540485
+      ]
+    }
+  },
+  "version": 0.4
+}
