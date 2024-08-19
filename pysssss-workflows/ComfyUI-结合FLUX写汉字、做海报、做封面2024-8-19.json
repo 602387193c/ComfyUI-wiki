@@ -1,0 +1,1193 @@
+{
+  "last_node_id": 43,
+  "last_link_id": 57,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        -2283,
+        -156
+      ],
+      "size": {
+        "0": 1171.6224365234375,
+        "1": 881.7828979492188
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12,
+            23,
+            32,
+            41
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            3,
+            37
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-6713509.300000012.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "InvertMask",
+      "pos": [
+        -191,
+        381
+      ],
+      "size": {
+        "0": 140,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 3,
+          "label": "遮罩"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            4
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InvertMask"
+      }
+    },
+    {
+      "id": 5,
+      "type": "MaskToImage",
+      "pos": [
+        -6,
+        374
+      ],
+      "size": {
+        "0": 176.39999389648438,
+        "1": 26
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 4,
+          "label": "遮罩"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "图像"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      }
+    },
+    {
+      "id": 13,
+      "type": "AnyText",
+      "pos": [
+        325.1611321566728,
+        58.426789590053744
+      ],
+      "size": {
+        "0": 481.1009216308594,
+        "1": 654.0508422851562
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "AnyText_Loader",
+          "type": "AnyText_Loader",
+          "link": 15,
+          "slot_index": 0,
+          "label": "AnyText_Loader"
+        },
+        {
+          "name": "ori_image",
+          "type": "IMAGE",
+          "link": 12,
+          "label": "ori_image"
+        },
+        {
+          "name": "pos_image",
+          "type": "IMAGE",
+          "link": 11,
+          "label": "pos_image"
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 57,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            31,
+            35
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnyText"
+      },
+      "widgets_values": [
+        "text “最新整活” ",
+        "best quality, extremely detailed,4k, HD, supper legible text,  clear text edges,  clear strokes, neat writing, no watermarks",
+        "low-res, bad anatomy, extra digit, fewer digits, cropped, worst quality, low quality, watermark, unreadable text, messy words, distorted text, disorganized writing, advertising picture",
+        "text-editing",
+        "↔",
+        false,
+        1,
+        20,
+        74417533,
+        "randomize",
+        512,
+        512,
+        false,
+        1,
+        9,
+        0,
+        "auto",
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 17,
+      "type": "AnyText_loader",
+      "pos": [
+        -147,
+        151
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "AnyText_Loader",
+          "type": "AnyText_Loader",
+          "links": [
+            15
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnyText_loader"
+      },
+      "widgets_values": [
+        "SourceHanSansSC-Medium.otf",
+        "anytext\\anytext_v1.1.ckpt",
+        "clip-vit-large-patch14",
+        "utrobinmv/t5_translate_en_ru_zh_small_1024"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "ImageComposite+",
+      "pos": [
+        1460,
+        23
+      ],
+      "size": {
+        "0": 315,
+        "1": 170
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "destination",
+          "type": "IMAGE",
+          "link": 24
+        },
+        {
+          "name": "source",
+          "type": "IMAGE",
+          "link": 30
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 38
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageComposite+"
+      },
+      "widgets_values": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "type": "PreviewImage",
+      "pos": [
+        1922,
+        459
+      ],
+      "size": {
+        "0": 1225.4639892578125,
+        "1": 938.175048828125
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 19
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 20,
+      "type": "ImageResize+",
+      "pos": [
+        987,
+        105
+      ],
+      "size": {
+        "0": 315,
+        "1": 218
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 31
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 28,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 29,
+          "widget": {
+            "name": "height"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            30
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageResize+"
+      },
+      "widgets_values": [
+        512,
+        512,
+        "lanczos",
+        "stretch",
+        "always",
+        0
+      ]
+    },
+    {
+      "id": 21,
+      "type": "GetImageSize",
+      "pos": [
+        585,
+        773
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            28
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            29
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetImageSize"
+      }
+    },
+    {
+      "id": 23,
+      "type": "Reroute",
+      "pos": [
+        497,
+        -255
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            24
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 25,
+      "type": "Reroute",
+      "pos": [
+        -669,
+        676
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            33
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 27,
+      "type": "PreviewImage",
+      "pos": [
+        977,
+        457
+      ],
+      "size": {
+        "0": 860.472412109375,
+        "1": 667.0211181640625
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 28,
+      "type": "ImpactGaussianBlurMask",
+      "pos": [
+        429,
+        -173
+      ],
+      "size": {
+        "0": 213.67137145996094,
+        "1": 82
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            38
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactGaussianBlurMask"
+      },
+      "widgets_values": [
+        10,
+        10
+      ]
+    },
+    {
+      "id": 29,
+      "type": "TextConcat",
+      "pos": [
+        -210,
+        -800
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text5",
+          "type": "STRING",
+          "link": 56,
+          "widget": {
+            "name": "text5"
+          }
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 52,
+          "widget": {
+            "name": "text3"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            45
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TextConcat"
+      },
+      "widgets_values": [
+        "",
+        "text",
+        "",
+        "过周末啦",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 32,
+      "type": "Florence2Run",
+      "pos": [
+        -1217,
+        -1001
+      ],
+      "size": {
+        "0": 400,
+        "1": 352
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 41
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            42
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "detailed_caption",
+        true,
+        false,
+        1024,
+        3,
+        true,
+        "",
+        842616229356213,
+        "randomize"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -782,
+        -938
+      ],
+      "size": {
+        "0": 210,
+        "1": 148.29689025878906
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 42,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            55
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "The image shows a woman with red hair sitting on the ground wearing headphones. She is surrounded by dried trees and a sky with clouds in the background."
+      ]
+    },
+    {
+      "id": 35,
+      "type": "ShowText|pysssss",
+      "pos": [
+        143,
+        -769
+      ],
+      "size": {
+        "0": 210,
+        "1": 173.3334197998047
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 45,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            57
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "text“写汉字”“做海报、封面”The image shows a woman with red hair sitting on the ground wearing headphones. She is surrounded by dried trees and a sky with clouds in the background."
+      ]
+    },
+    {
+      "id": 36,
+      "type": "DownloadAndLoadFlorence2Model",
+      "pos": [
+        -1630,
+        -877
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "PEFTLORA",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            46
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "microsoft/Florence-2-large",
+        "fp16",
+        "sdpa"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "String Literal",
+      "pos": [
+        -1557,
+        -412
+      ],
+      "size": {
+        "0": 430.8569030761719,
+        "1": 195.09991455078125
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            52
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "String Literal"
+      },
+      "widgets_values": [
+        "“写汉字”“做海报做封面”"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 42,
+      "type": "String Literal",
+      "pos": [
+        -491,
+        -977
+      ],
+      "size": {
+        "0": 228.2422637939453,
+        "1": 116.33535766601562
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "String Literal"
+      },
+      "widgets_values": [
+        "The image shows a Chinese movie poster featuring a man with long hair and a blue shirt, set against a backdrop of buildings and a sky. The text on the poster reads."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 43,
+      "type": "CR Text Replace",
+      "pos": [
+        -506,
+        -802
+      ],
+      "size": {
+        "0": 210,
+        "1": 198
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 55,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            56
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Replace"
+      },
+      "widgets_values": [
+        "",
+        "\"",
+        "",
+        "\"",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      3,
+      1,
+      4,
+      0,
+      "MASK"
+    ],
+    [
+      4,
+      4,
+      0,
+      5,
+      0,
+      "MASK"
+    ],
+    [
+      11,
+      5,
+      0,
+      13,
+      2,
+      "IMAGE"
+    ],
+    [
+      12,
+      3,
+      0,
+      13,
+      1,
+      "IMAGE"
+    ],
+    [
+      15,
+      17,
+      0,
+      13,
+      0,
+      "AnyText_Loader"
+    ],
+    [
+      19,
+      18,
+      0,
+      19,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      3,
+      0,
+      23,
+      0,
+      "*"
+    ],
+    [
+      24,
+      23,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      21,
+      0,
+      20,
+      1,
+      "INT"
+    ],
+    [
+      29,
+      21,
+      1,
+      20,
+      2,
+      "INT"
+    ],
+    [
+      30,
+      20,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      31,
+      13,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      32,
+      3,
+      0,
+      25,
+      0,
+      "*"
+    ],
+    [
+      33,
+      25,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      13,
+      0,
+      27,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      3,
+      1,
+      28,
+      0,
+      "MASK"
+    ],
+    [
+      38,
+      28,
+      0,
+      18,
+      2,
+      "MASK"
+    ],
+    [
+      41,
+      3,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      32,
+      2,
+      33,
+      0,
+      "STRING"
+    ],
+    [
+      45,
+      29,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      46,
+      36,
+      0,
+      32,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      52,
+      41,
+      0,
+      29,
+      1,
+      "STRING"
+    ],
+    [
+      55,
+      33,
+      0,
+      43,
+      0,
+      "STRING"
+    ],
+    [
+      56,
+      43,
+      0,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      57,
+      35,
+      0,
+      13,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Florence写提示词",
+      "bounding": [
+        -1640,
+        -1075,
+        2023,
+        532
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "anytext生成文字-核心节点",
+      "bounding": [
+        -259,
+        -16,
+        1075,
+        866
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6303940863129804,
+      "offset": [
+        2487.070851565585,
+        656.1023823892732
+      ]
+    }
+  },
+  "version": 0.4
+}
