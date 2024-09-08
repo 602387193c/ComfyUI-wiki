@@ -1,0 +1,1392 @@
+{
+  "last_node_id": 86,
+  "last_link_id": 175,
+  "nodes": [
+    {
+      "id": 26,
+      "type": "BRIA_RMBG_ModelLoader_Zho",
+      "pos": {
+        "0": -3650,
+        "1": 1570
+      },
+      "size": {
+        "0": 302.4000244140625,
+        "1": 26
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "rmbgmodel",
+          "type": "RMBGMODEL",
+          "links": [
+            41
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BRIA_RMBG_ModelLoader_Zho"
+      }
+    },
+    {
+      "id": 16,
+      "type": "LayerMask: LoadBiRefNetModel",
+      "pos": {
+        "0": -3740,
+        "1": 640
+      },
+      "size": {
+        "0": 378,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "birefnet_model",
+          "type": "BIREFNET_MODEL",
+          "links": [
+            21
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerMask: LoadBiRefNetModel"
+      },
+      "widgets_values": [
+        "BiRefNet-general-epoch_244.pth"
+      ],
+      "color": "rgba(27, 80, 119, 0.7)"
+    },
+    {
+      "id": 6,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 650,
+        "1": 390
+      },
+      "size": {
+        "0": 708.069580078125,
+        "1": 919.252685546875
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 15
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 9,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -110,
+        "1": 1450
+      },
+      "size": {
+        "0": 1950.2105712890625,
+        "1": 1461.3140869140625
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 13,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 1900,
+        "1": 1450
+      },
+      "size": {
+        "0": 1961.9923095703125,
+        "1": 1448.9876708984375
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 12,
+      "type": "HivisionNode",
+      "pos": {
+        "0": -490,
+        "1": 1100
+      },
+      "size": {
+        "0": 330,
+        "1": 198
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_img",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "3ch_standard_img",
+          "type": "IMAGE",
+          "links": [
+            17
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "4ch_hd_img",
+          "type": "IMAGE",
+          "links": [
+            18
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "HivisionNode寸照排版",
+      "properties": {
+        "Node name for S&R": "HivisionNode"
+      },
+      "widgets_values": [
+        "generate_layout_photos",
+        300,
+        "一寸\t\t(413, 295)",
+        "蓝色",
+        "hivision_modnet",
+        "pure_color"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "HivisionNode",
+      "pos": {
+        "0": -860,
+        "1": 890
+      },
+      "size": {
+        "0": 330,
+        "1": 198
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_img",
+          "type": "IMAGE",
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "name": "3ch_standard_img",
+          "type": "IMAGE",
+          "links": [
+            14,
+            16
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "4ch_hd_img",
+          "type": "IMAGE",
+          "links": [
+            15
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "HivisionNode添加背景",
+      "properties": {
+        "Node name for S&R": "HivisionNode"
+      },
+      "widgets_values": [
+        "add_background",
+        300,
+        "一寸\t\t(413, 295)",
+        "蓝色",
+        "hivision_modnet",
+        "pure_color"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 66,
+      "type": "Note",
+      "pos": {
+        "0": -850,
+        "1": 1130
+      },
+      "size": {
+        "0": 309.4216003417969,
+        "1": 58
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "调照片背景只调第二个"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 34,
+      "type": "LayerUtility: ImageReelComposit",
+      "pos": {
+        "0": -2433,
+        "1": 1093
+      },
+      "size": {
+        "0": 315,
+        "1": 190
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "reel_1",
+          "type": "Reel",
+          "link": 53
+        },
+        {
+          "name": "reel_2",
+          "type": "Reel",
+          "link": 125
+        },
+        {
+          "name": "reel_3",
+          "type": "Reel",
+          "link": null
+        },
+        {
+          "name": "reel_4",
+          "type": "Reel",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "links": [
+            54
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerUtility: ImageReelComposit"
+      },
+      "widgets_values": [
+        "Alibaba-PuHuiTi-Heavy.ttf",
+        40,
+        32,
+        "light"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 67,
+      "type": "LayerUtility: ImageReel",
+      "pos": {
+        "0": -2803,
+        "1": 1403
+      },
+      "size": {
+        "0": 315,
+        "1": 238
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 124
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 128
+        },
+        {
+          "name": "image3",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image4",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reel",
+          "type": "Reel",
+          "links": [
+            125
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerUtility: ImageReel"
+      },
+      "widgets_values": [
+        "原图",
+        "5-PersonMask V2",
+        "",
+        "",
+        768,
+        32
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 29,
+      "type": "LayerUtility: ImageReel",
+      "pos": {
+        "0": -2809,
+        "1": 1085
+      },
+      "size": {
+        "0": 315,
+        "1": 238
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 47
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 48
+        },
+        {
+          "name": "image3",
+          "type": "IMAGE",
+          "link": 51
+        },
+        {
+          "name": "image4",
+          "type": "IMAGE",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reel",
+          "type": "Reel",
+          "links": [
+            53
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerUtility: ImageReel"
+      },
+      "widgets_values": [
+        "1-BiRefNet Ultra V2",
+        "2-RmBgUltra V2",
+        "3-Inspyrenet Advanced",
+        "4-BRIA RMBG",
+        768,
+        32
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 76,
+      "type": "SaveImage",
+      "pos": {
+        "0": -660,
+        "1": 270
+      },
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 143
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "HivisionNode",
+      "pos": {
+        "0": -1230,
+        "1": 640
+      },
+      "size": {
+        "0": 330,
+        "1": 198
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_img",
+          "type": "IMAGE",
+          "link": 170
+        }
+      ],
+      "outputs": [
+        {
+          "name": "3ch_standard_img",
+          "type": "IMAGE",
+          "links": [
+            142
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "4ch_hd_img",
+          "type": "IMAGE",
+          "links": [
+            123,
+            143
+          ],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "title": "HivisionNode人像抠图和背景透明",
+      "properties": {
+        "Node name for S&R": "HivisionNode"
+      },
+      "widgets_values": [
+        "idphoto",
+        300,
+        "一寸\t\t(413, 295)",
+        "蓝色",
+        "modnet_photographic_portrait_matting",
+        "pure_color"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "SaveImage",
+      "pos": {
+        "0": -1150,
+        "1": 250
+      },
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 142
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "LayerMask: RmBgUltra V2",
+      "pos": {
+        "0": -3250,
+        "1": 990
+      },
+      "size": {
+        "0": 340.4702453613281,
+        "1": 246
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            48,
+            172
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerMask: RmBgUltra V2"
+      },
+      "widgets_values": [
+        "VITMatte",
+        6,
+        6,
+        0.01,
+        0.99,
+        true,
+        "cuda",
+        2
+      ],
+      "color": "rgba(27, 80, 119, 0.7)"
+    },
+    {
+      "id": 23,
+      "type": "InspyrenetRembgAdvanced",
+      "pos": {
+        "0": -3260,
+        "1": 1310
+      },
+      "size": {
+        "0": 355.71893310546875,
+        "1": 102
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            51,
+            173
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "InspyrenetRembgAdvanced"
+      },
+      "widgets_values": [
+        0.5,
+        "default"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "BRIA_RMBG_Zho",
+      "pos": {
+        "0": -3250,
+        "1": 1500
+      },
+      "size": {
+        "0": 347.71893310546875,
+        "1": 54.235939025878906
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "rmbgmodel",
+          "type": "RMBGMODEL",
+          "link": 41
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            52,
+            174
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BRIA_RMBG_Zho"
+      }
+    },
+    {
+      "id": 68,
+      "type": "LayerMask: PersonMaskUltra V2",
+      "pos": {
+        "0": -3278,
+        "1": 1628
+      },
+      "size": {
+        "0": 365.4000244140625,
+        "1": 414
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 126
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            128,
+            175
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerMask: PersonMaskUltra V2"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        0.4,
+        "VITMatte",
+        6,
+        6,
+        0.55,
+        0.99,
+        true,
+        "cuda",
+        2
+      ],
+      "color": "rgba(27, 80, 119, 0.7)"
+    },
+    {
+      "id": 14,
+      "type": "LayerMask: BiRefNetUltraV2",
+      "pos": {
+        "0": -3250,
+        "1": 680
+      },
+      "size": {
+        "0": 352.79998779296875,
+        "1": 246
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "name": "birefnet_model",
+          "type": "BIREFNET_MODEL",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            47,
+            134
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerMask: BiRefNetUltraV2"
+      },
+      "widgets_values": [
+        "VITMatte",
+        4,
+        2,
+        0.01,
+        0.56,
+        false,
+        "cuda",
+        2
+      ],
+      "color": "rgba(27, 80, 119, 0.7)"
+    },
+    {
+      "id": 71,
+      "type": "ImpactSwitch",
+      "pos": {
+        "0": -2399,
+        "1": 738
+      },
+      "size": {
+        "0": 210,
+        "1": 182
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input1",
+          "type": "IMAGE",
+          "link": 134
+        },
+        {
+          "name": "input2",
+          "type": "IMAGE",
+          "link": 172
+        },
+        {
+          "name": "input3",
+          "type": "IMAGE",
+          "link": 173
+        },
+        {
+          "name": "input4",
+          "type": "IMAGE",
+          "link": 174
+        },
+        {
+          "name": "input5",
+          "type": "IMAGE",
+          "link": 175
+        },
+        {
+          "name": "input6",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            165
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "IMAGE"
+        },
+        {
+          "name": "selected_label",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "selected_index",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactSwitch"
+      },
+      "widgets_values": [
+        1,
+        false
+      ]
+    },
+    {
+      "id": 84,
+      "type": "LayerUtility: ImageRemoveAlpha",
+      "pos": {
+        "0": -2119,
+        "1": 748
+      },
+      "size": {
+        "0": 254.40000915527344,
+        "1": 102
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "RGBA_image",
+          "type": "IMAGE",
+          "link": 165
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "RGB_image",
+          "type": "IMAGE",
+          "links": [
+            167,
+            170
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LayerUtility: ImageRemoveAlpha"
+      },
+      "widgets_values": [
+        true,
+        "#438EDB"
+      ],
+      "color": "rgba(38, 73, 116, 0.7)"
+    },
+    {
+      "id": 65,
+      "type": "Note",
+      "pos": {
+        "0": -2100,
+        "1": 1496
+      },
+      "size": {
+        "0": 412.6783752441406,
+        "1": 71.01907348632812
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "从下面去除背景效果最好的一个中选一个就行了，上面绿色的节点中填入相应的数字"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 7,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -120,
+        "1": 400
+      },
+      "size": {
+        "0": 665.3179931640625,
+        "1": 937.1857299804688
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 35,
+      "type": "PreviewImage",
+      "pos": {
+        "0": -2118,
+        "1": 1665
+      },
+      "size": {
+        "0": 726.8912353515625,
+        "1": 695.6851196289062
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": {
+        "0": -4089,
+        "1": 999
+      },
+      "size": {
+        "0": 462.6001281738281,
+        "1": 453.5515441894531
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19,
+            35,
+            39,
+            42,
+            124,
+            126
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "毛敏.JPG",
+        "image"
+      ]
+    },
+    {
+      "id": 86,
+      "type": "SaveImage",
+      "pos": {
+        "0": -1538,
+        "1": 257
+      },
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 167
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    }
+  ],
+  "links": [
+    [
+      14,
+      11,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      11,
+      1,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      16,
+      11,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      12,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      12,
+      1,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      2,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      16,
+      0,
+      14,
+      1,
+      "BIREFNET_MODEL"
+    ],
+    [
+      35,
+      2,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      2,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      41,
+      26,
+      0,
+      25,
+      0,
+      "RMBGMODEL"
+    ],
+    [
+      42,
+      2,
+      0,
+      25,
+      1,
+      "IMAGE"
+    ],
+    [
+      47,
+      14,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      21,
+      0,
+      29,
+      1,
+      "IMAGE"
+    ],
+    [
+      51,
+      23,
+      0,
+      29,
+      2,
+      "IMAGE"
+    ],
+    [
+      52,
+      25,
+      0,
+      29,
+      3,
+      "IMAGE"
+    ],
+    [
+      53,
+      29,
+      0,
+      34,
+      0,
+      "Reel"
+    ],
+    [
+      54,
+      34,
+      0,
+      35,
+      0,
+      "IMAGE"
+    ],
+    [
+      123,
+      10,
+      1,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      124,
+      2,
+      0,
+      67,
+      0,
+      "IMAGE"
+    ],
+    [
+      125,
+      67,
+      0,
+      34,
+      1,
+      "Reel"
+    ],
+    [
+      126,
+      2,
+      0,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      128,
+      68,
+      0,
+      67,
+      1,
+      "IMAGE"
+    ],
+    [
+      134,
+      14,
+      0,
+      71,
+      0,
+      "*"
+    ],
+    [
+      142,
+      10,
+      0,
+      75,
+      0,
+      "IMAGE"
+    ],
+    [
+      143,
+      10,
+      1,
+      76,
+      0,
+      "IMAGE"
+    ],
+    [
+      165,
+      71,
+      0,
+      84,
+      0,
+      "IMAGE"
+    ],
+    [
+      167,
+      84,
+      0,
+      86,
+      0,
+      "IMAGE"
+    ],
+    [
+      170,
+      84,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      172,
+      21,
+      0,
+      71,
+      1,
+      "IMAGE"
+    ],
+    [
+      173,
+      23,
+      0,
+      71,
+      2,
+      "IMAGE"
+    ],
+    [
+      174,
+      25,
+      0,
+      71,
+      3,
+      "IMAGE"
+    ],
+    [
+      175,
+      68,
+      0,
+      71,
+      4,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.2940834937055162,
+      "offset": [
+        5783.230639518384,
+        30.740031688555362
+      ]
+    }
+  },
+  "version": 0.4
+}
