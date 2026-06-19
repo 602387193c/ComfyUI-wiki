@@ -92,6 +92,7 @@
 
 | 项目名称及网址 | 介绍 | 备注 |
 | --- | --- | --- |
+| [MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS)<br>[![stars](https://badgen.net/github/stars/OpenMOSS/MOSS-TTS)](https://github.com/OpenMOSS/MOSS-TTS/stargazers)<br> | 【TTS】OpenMOSS开源文本转语音项目。 |  |
 | [LongCat-AudioDiT](https://github.com/meituan-longcat/LongCat-AudioDiT)<br>[![stars](https://badgen.net/github/stars/meituan-longcat/LongCat-AudioDiT)](https://github.com/meituan-longcat/LongCat-AudioDiT/stargazers)<br> | 【TTS/语音克隆】美团开源，波形潜空间里的扩散式文本转语音；支持TTS和zero-shot voice cloning。 | HF模型: [meituan-longcat](https://huggingface.co/meituan-longcat) |
 | [ChatTTS](https://github.com/2noise/ChatTTS)<br>[![stars](https://badgen.net/github/stars/2noise/ChatTTS)](https://github.com/2noise/ChatTTS/stargazers)<br> | 【TTS】文字转语音，主打拟人对话。 | [ChatTTS-ui](https://github.com/jianchang512/ChatTTS-ui)<br>[ChatTTS-Enhanced](https://github.com/CCmahua/ChatTTS-Enhanced) |
 | [RVC变声](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)<br>[![stars](https://badgen.net/github/stars/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/stargazers)<br> | 【变声/声音转换】RVC，我视频用的变声器。 | [下载地址](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/releases) |
