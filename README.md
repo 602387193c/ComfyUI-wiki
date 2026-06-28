@@ -97,6 +97,7 @@
 
 | 项目名称及网址 | 介绍 | 备注 |
 | --- | --- | --- |
+| [LocateAnything](https://github.com/NVlabs/Eagle/tree/main/Embodied)<br>[![stars](https://badgen.net/github/stars/NVlabs/Eagle)](https://github.com/NVlabs/Eagle/stargazers) | 【视觉定位/检测】NVIDIA基于Eagle的视觉语言定位模型，支持物体检测、OCR、GUI grounding等。 | HF Demo: [nvidia/LocateAnything](https://huggingface.co/spaces/nvidia/LocateAnything/tree/main)<br>插件: [ComfyUI-LocateAnything](https://github.com/alisson-anjos/ComfyUI-LocateAnything)<br>作者: [NVlabs](https://github.com/NVlabs) |
 | [Kimodo](https://github.com/nv-tlabs/kimodo)<br>[![stars](https://badgen.net/github/stars/nv-tlabs/kimodo)](https://github.com/nv-tlabs/kimodo/stargazers) | 【3D动作生成】文本/约束驱动的人体和人形机器人动作扩散模型。 | 插件: [ComfyUI-Kimodo](https://github.com/jtydhr88/ComfyUI-Kimodo)<br>作者: [nv-tlabs](https://github.com/nv-tlabs) |
 | [SOMA-X](https://github.com/NVlabs/SOMA-X)<br>[![stars](https://badgen.net/github/stars/NVlabs/SOMA-X)](https://github.com/NVlabs/SOMA-X/stargazers) | 【人体模型】SOMA: Unifying Parametric Human Body Models。 | 作者: [NVlabs](https://github.com/NVlabs) |
 | [GR00T-WholeBodyControl](https://github.com/NVlabs/GR00T-WholeBodyControl)<br>[![stars](https://badgen.net/github/stars/NVlabs/GR00T-WholeBodyControl)](https://github.com/NVlabs/GR00T-WholeBodyControl/stargazers) | 【机器人全身控制】NVIDIA GR00T WBC代码库，含Decoupled WBC、GEAR-SONIC、MotionBricks。 | 作者: [NVlabs](https://github.com/NVlabs) |
