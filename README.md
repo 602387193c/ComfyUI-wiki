@@ -84,6 +84,16 @@
 | [HiDream-I1](https://github.com/HiDream-ai/HiDream-I1)<br>[![stars](https://badgen.net/github/stars/HiDream-ai/HiDream-I1)](https://github.com/HiDream-ai/HiDream-I1/stargazers)<br> | 【全新模型架构】17B参数稀疏DiT，集成Llama-3.1-8B文本编码器。DPG-Bench/GenEval/HPSv2.1多项基准SOTA，超越FLUX.1-dev/DALL-E 3/SD3。Full/Dev/Fast三版本。论文: [arxiv 2505.22705](https://arxiv.org/abs/2505.22705) | Diffusers支持<br>HF: [HiDream-ai](https://huggingface.co/HiDream-ai)<br>MIT开源 |
 | [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-api?utm_source=twitter&utm_medium=website&utm_campaign=blog)                          | 申请 API ：[Stability API key](https://platform.stability.ai/account/keys)                                                                                                                                                                | 官方版本：[ComfyUI-SAI_API](https://github.com/Stability-AI/ComfyUI-SAI_API)                                                                                                                                                                                     |
 
+## 🧠大语言模型 LLM（大厂开源）
+
+| 模型 | 简介 | 备注 |
+| --- | --- | --- |
+| [Qwen3.6-27B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4) | 【NVIDIA/通义】Qwen3.6-27B 的 NVFP4 量化版，面向推理部署。 | HF: nvidia |
+| [GLM-5.2](https://huggingface.co/zai-org/GLM-5.2) | 【智谱/Z.ai】GLM 系列大语言模型。 | HF: zai-org |
+| [Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code) | 【Moonshot】Kimi 代码模型。 | HF: moonshotai |
+| [MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | 【MiniMax】MiniMax 开源大语言模型。 | HF: MiniMaxAI |
+| [DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | 【DeepSeek】DeepSeek 开源大语言模型。 | HF: deepseek-ai |
+
 ## 🎧声音、音乐、TTS/ASR
 
 | 项目名称及网址 | 介绍 | 备注 |
