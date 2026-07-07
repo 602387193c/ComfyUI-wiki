@@ -88,6 +88,7 @@
 
 | 模型 | 简介 | 备注 |
 | --- | --- | --- |
+| [Hy3](https://huggingface.co/tencent/Hy3) | 【腾讯/Hunyuan】295B MoE，21B激活参数，面向推理、Agent和长上下文任务。 | HF: tencent |
 | [Qwen3.6-27B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4) | 【NVIDIA/通义】Qwen3.6-27B 的 NVFP4 量化版，面向推理部署。 | HF: nvidia |
 | [GLM-5.2](https://huggingface.co/zai-org/GLM-5.2) | 【智谱/Z.ai】GLM 系列大语言模型。 | HF: zai-org |
 | [Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code) | 【Moonshot】Kimi 代码模型。 | HF: moonshotai |
@@ -98,6 +99,7 @@
 
 | 项目名称及网址 | 介绍 | 备注 |
 | --- | --- | --- |
+| [Higgs TTS 3 4B](https://huggingface.co/bosonai/higgs-tts-3-4b) | 【TTS/语音克隆】BosonAI 4B多语种可控TTS，支持情绪、风格、停顿等控制。 | HF: bosonai |
 | [MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS)<br>[![stars](https://badgen.net/github/stars/OpenMOSS/MOSS-TTS)](https://github.com/OpenMOSS/MOSS-TTS/stargazers)<br> | 【TTS】OpenMOSS开源文本转语音项目。 |  |
 | [LongCat-AudioDiT](https://github.com/meituan-longcat/LongCat-AudioDiT)<br>[![stars](https://badgen.net/github/stars/meituan-longcat/LongCat-AudioDiT)](https://github.com/meituan-longcat/LongCat-AudioDiT/stargazers)<br> | 【TTS/语音克隆】美团开源，波形潜空间里的扩散式文本转语音；支持TTS和zero-shot voice cloning。 | HF模型: [meituan-longcat](https://huggingface.co/meituan-longcat) |
 | [ChatTTS](https://github.com/2noise/ChatTTS)<br>[![stars](https://badgen.net/github/stars/2noise/ChatTTS)](https://github.com/2noise/ChatTTS/stargazers)<br> | 【TTS】文字转语音，主打拟人对话。 | [ChatTTS-ui](https://github.com/jianchang512/ChatTTS-ui)<br>[ChatTTS-Enhanced](https://github.com/CCmahua/ChatTTS-Enhanced) |
