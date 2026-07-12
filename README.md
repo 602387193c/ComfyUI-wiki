@@ -52,7 +52,7 @@
 
 如果ComfyUI安装了过多组件,可能会出现环境冲突等问题。我推荐使用Anaconda创建虚拟环境来运行ComfyUI,避免潜在的冲突。就算你的虚拟环境也装的太多了，引起了冲突，你还可以再创建一个虚拟环境来专门运行起你现在很需要运行起来的工作流。具体我写了份详细的文档，请批评指正：[Windows环境下ComfyUI自定义节点安装指南](docs/Windows环境下ComfyUI自定义节点安装指南.md)，视频解释：[ComfyUI报错的终极解决方案！](https://www.bilibili.com/video/BV1Up421Q7YA/?vd_source=7351bb1ce0a307c41b60b64ca036a240)
 
-# 💡AIGC前沿技术
+# 💡AI前沿技术
 
 
 ## 📺视频、数字人
@@ -133,7 +133,7 @@
 | 5.[Shakker-Labs](https://huggingface.co/Shakker-Labs) | 6.[InstantX](https://huggingface.co/InstantX)                                                                                                               | 7.[阿里妈妈alimama](https://huggingface.co/alimama-creative)         | 8.[TheMistoAI](https://huggingface.co/TheMistoAI)                                                                                |
 | 9.[jasperai](https://hf-mirror.com/jasperai)          | 10.苹果开源深度<br> [ml-depth-pro](https://github.com/apple/ml-depth-pro)<br>comfyui实现：[ComfyUI-Depth-Pro](https://github.com/spacepxl/ComfyUI-Depth-Pro)<br><br> | 11.视频向深度图[DepthCrafter](https://github.com/Tencent/DepthCrafter) | 12.[Lotus](https://github.com/EnVision-Research/Lotus)基于扩散的高质量密集预测视觉基础模型，[ComfyUI-Lotus](https://github.com/kijai/ComfyUI-Lotus) |
 |                                                       |                                                                                                                                                             |                                                                  |                                                                                                                                  |
-## 🧠LLM赋能、语义理解、检测、分割、描述（caption）
+## 📡检测、分割、描述（caption）
 
 | [SAM3](https://github.com/facebookresearch/sam3)<br>[![stars](https://badgen.net/github/stars/facebookresearch/sam3)](https://github.com/facebookresearch/sam3/stargazers)<br> | 【检测、分割】Meta SAM系列，图像/视频分割与视觉理解。 | HF模型: [facebook/sam3.1](https://huggingface.co/facebook/sam3.1) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
