@@ -1,0 +1,1895 @@
+{
+    "id":  "e3f2b845-8f2c-4b5a-9caf-eac1029d3e7e",
+    "revision":  0,
+    "last_node_id":  142,
+    "last_link_id":  283,
+    "nodes":  [
+                  {
+                      "id":  92,
+                      "type":  "SaveVideo",
+                      "pos":  [
+                                  1150,
+                                  4880
+                              ],
+                      "size":  [
+                                   1210,
+                                   106
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  23,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "视频",
+                                         "name":  "video",
+                                         "type":  "VIDEO",
+                                         "link":  260
+                                     },
+                                     {
+                                         "localized_name":  "文件名前缀",
+                                         "name":  "filename_prefix",
+                                         "type":  "STRING",
+                                         "widget":  {
+                                                        "name":  "filename_prefix"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "格式",
+                                         "name":  "format",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "format"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "编码器",
+                                         "name":  "codec",
+                                         "type":  "COMFY_DYNAMICCOMBO_V3",
+                                         "widget":  {
+                                                        "name":  "codec"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "video",
+                                          "name":  "video",
+                                          "type":  "VIDEO",
+                                          "links":  null
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "SaveVideo"
+                                     },
+                      "widgets_values":  [
+                                             "video/MiniMax_H3",
+                                             "auto",
+                                             "auto"
+                                         ]
+                  },
+                  {
+                      "id":  115,
+                      "type":  "ResolutionSelector",
+                      "pos":  [
+                                  -1480,
+                                  5610
+                              ],
+                      "size":  [
+                                   270,
+                                   170
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  0,
+                      "mode":  0,
+                      "showAdvanced":  false,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "宽高比",
+                                         "name":  "aspect_ratio",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "aspect_ratio"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "百万像素",
+                                         "name":  "megapixels",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "megapixels"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "倍数",
+                                         "name":  "multiple",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "multiple"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "宽度",
+                                          "name":  "width",
+                                          "type":  "INT",
+                                          "links":  [
+                                                        276
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "高度",
+                                          "name":  "height",
+                                          "type":  "INT",
+                                          "links":  [
+                                                        277
+                                                    ]
+                                      }
+                                  ],
+                      "title":  "Resolution Selector (Size)",
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "ResolutionSelector"
+                                     },
+                      "widgets_values":  [
+                                             "16:9 (Widescreen)",
+                                             0.4,
+                                             32
+                                         ],
+                      "color":  "#322",
+                      "bgcolor":  "#533"
+                  },
+                  {
+                      "id":  116,
+                      "type":  "MarkdownNote",
+                      "pos":  [
+                                  -2030,
+                                  4850
+                              ],
+                      "size":  [
+                                   450,
+                                   889.6875
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  1,
+                      "mode":  0,
+                      "inputs":  [
+
+                                 ],
+                      "outputs":  [
+
+                                  ],
+                      "title":  "Note: MiniMax H3",
+                      "properties":  {
+
+                                     },
+                      "widgets_values":  [
+                                             "## MiniMax H3\n\n[MiniMax H3](https://www.minimax.io/blog/minimax-h3) is MiniMax\u0027s general-purpose, omni-modal generation model. It jointly understands text, image, video, and audio, and generates video with **native stereo audio**: voice, sound effects, and music are modeled jointly in a single forward pass, not layered on afterward. Output is up to 2K resolution, 24fps, and up to about 15 seconds.\n\n## ComfyUI links\n- [ComfyUI#15224](https://github.com/Comfy-Org/ComfyUI/pull/15224)\n- [🤗 Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)\n\n## About this workflow\n\nThis template runs the **reference-to-video (ref2va)** task using the `MiniMaxH3ReferenceToVideo` node. It takes any mix of reference images, videos, and standalone audio, and weaves them into the generation to lock in a character\u0027s identity, a style, a motion, a camera move, or a voice.\n\n**Key inputs**\n\n- **ref_images / ref_videos / ref_video_audios / ref_audios**: up to 9 reference images, 3 reference videos (each may carry its own paired soundtrack), and 3 standalone reference audio clips\n- **prompt**: reference the inputs by tag, in the exact order they were connected, for example `\u003cPicture 1\u003e`, `\u003cVideo 1\u003e`, `\u003cAudio 1\u003e`, then describe the target scene, motion, and audio\n- **ref_image_size**: `match` scales references down to the generation\u0027s resolution (faster); `max` keeps up to a 2048px short edge for stronger identity fidelity, at the cost of speed since reference tokens ride along every sampling step\n- **width / height**: set via Resolution Selector.\n- **duration (seconds)**: converted to a valid frame `length` by the Math Expression node\n\n**Sampling and decode**\n\n- Sampler: `res_multistep`. `beta` or `normal` scheduler tends to outperform `simple` for reference-heavy prompts like this one\n- The sampler\u0027s joint audio+video `LATENT` output feeds directly into both `VAEDecode` (video, `minimax_h3_video_vae_fp16`) and `VAEDecodeAudio` (audio, `minimax_h3_audio_vae_fp32`); each decode node automatically pulls its own half out of the packed latent. `CreateVideo` then muxes the two into a single MP4 with synced sound\n- The diffusion model here is `minimax_h3_ref2va_pruned_int8_convrot.safetensors`, a different set of weights from the `fl2va` model used by the t2v/i2v templates\n\nRef2va\u0027s output is very sensitive to prompt wording; matching the reference tags precisely and being explicit about which reference drives which part of the shot tends to work best."
+                                         ],
+                      "color":  "#222",
+                      "bgcolor":  "#000"
+                  },
+                  {
+                      "id":  117,
+                      "type":  "MarkdownNote",
+                      "pos":  [
+                                  -2500,
+                                  4850
+                              ],
+                      "size":  [
+                                   440,
+                                   740
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  2,
+                      "mode":  0,
+                      "inputs":  [
+
+                                 ],
+                      "outputs":  [
+
+                                  ],
+                      "title":  "Note: Model Links",
+                      "properties":  {
+
+                                     },
+                      "widgets_values":  [
+                                             "## Model Links\n[🤗 Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)\n\n**vae**\n\n- [minimax_h3_video_vae_fp16.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors)\n- [minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors)\n\n**diffusion_models**\n\n- [minimax_h3_ref2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors)\n\n**text_encoders**\n\n- [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 vae/\n│   │   ├── minimax_h3_video_vae_fp16.safetensors\n│   │   └── minimax_h3_audio_vae_fp32.safetensors\n│   ├── 📂 diffusion_models/\n│   │   └── minimax_h3_ref2va_pruned_int8_convrot.safetensors\n│   └── 📂 text_encoders/\n│       └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+                                         ],
+                      "color":  "#222",
+                      "bgcolor":  "#000"
+                  },
+                  {
+                      "id":  119,
+                      "type":  "VAELoader",
+                      "pos":  [
+                                  -1490,
+                                  5270
+                              ],
+                      "size":  [
+                                   640,
+                                   70
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  3,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "vae名称",
+                                         "name":  "vae_name",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "vae_name"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "VAE",
+                                          "name":  "VAE",
+                                          "type":  "VAE",
+                                          "links":  [
+                                                        251,
+                                                        273
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "VAELoader",
+                                         "models":  [
+                                                        {
+                                                            "name":  "minimax_h3_video_vae_fp16.safetensors",
+                                                            "url":  "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors",
+                                                            "directory":  "vae"
+                                                        }
+                                                    ]
+                                     },
+                      "widgets_values":  [
+                                             "minimax_h3_video_vae_fp16.safetensors"
+                                         ]
+                  },
+                  {
+                      "id":  120,
+                      "type":  "VAELoader",
+                      "pos":  [
+                                  -1490,
+                                  5400
+                              ],
+                      "size":  [
+                                   650,
+                                   70
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  4,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "vae名称",
+                                         "name":  "vae_name",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "vae_name"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "VAE",
+                                          "name":  "VAE",
+                                          "type":  "VAE",
+                                          "links":  [
+                                                        250,
+                                                        274
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "VAELoader",
+                                         "models":  [
+                                                        {
+                                                            "name":  "minimax_h3_audio_vae_fp32.safetensors",
+                                                            "url":  "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors",
+                                                            "directory":  "vae"
+                                                        }
+                                                    ]
+                                     },
+                      "widgets_values":  [
+                                             "minimax_h3_audio_vae_fp32.safetensors"
+                                         ]
+                  },
+                  {
+                      "id":  121,
+                      "type":  "VAEDecodeAudio",
+                      "pos":  [
+                                  480,
+                                  5180
+                              ],
+                      "size":  [
+                                   230,
+                                   60
+                               ],
+                      "flags":  {
+                                    "collapsed":  false
+                                },
+                      "order":  21,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "Latent",
+                                         "name":  "samples",
+                                         "type":  "LATENT",
+                                         "link":  281
+                                     },
+                                     {
+                                         "localized_name":  "vae",
+                                         "name":  "vae",
+                                         "type":  "VAE",
+                                         "link":  250
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "音频",
+                                          "name":  "AUDIO",
+                                          "type":  "AUDIO",
+                                          "links":  [
+                                                        259
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "VAEDecodeAudio"
+                                     },
+                      "widgets_values":  [
+
+                                         ]
+                  },
+                  {
+                      "id":  122,
+                      "type":  "VAEDecode",
+                      "pos":  [
+                                  480,
+                                  5060
+                              ],
+                      "size":  [
+                                   230,
+                                   60
+                               ],
+                      "flags":  {
+                                    "collapsed":  false
+                                },
+                      "order":  20,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "Latent",
+                                         "name":  "samples",
+                                         "type":  "LATENT",
+                                         "link":  280
+                                     },
+                                     {
+                                         "localized_name":  "vae",
+                                         "name":  "vae",
+                                         "type":  "VAE",
+                                         "link":  251
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "图像",
+                                          "name":  "IMAGE",
+                                          "type":  "IMAGE",
+                                          "links":  [
+                                                        258
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "VAEDecode"
+                                     },
+                      "widgets_values":  [
+
+                                         ]
+                  },
+                  {
+                      "id":  123,
+                      "type":  "KSamplerSelect",
+                      "pos":  [
+                                  -260,
+                                  5190
+                              ],
+                      "size":  [
+                                   370,
+                                   70
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  5,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "采样器名称",
+                                         "name":  "sampler_name",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "sampler_name"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "采样器",
+                                          "name":  "SAMPLER",
+                                          "type":  "SAMPLER",
+                                          "links":  [
+                                                        255
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "KSamplerSelect"
+                                     },
+                      "widgets_values":  [
+                                             "res_multistep"
+                                         ]
+                  },
+                  {
+                      "id":  124,
+                      "type":  "BasicScheduler",
+                      "pos":  [
+                                  -260,
+                                  5310
+                              ],
+                      "size":  [
+                                   370,
+                                   130
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  15,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "模型",
+                                         "name":  "model",
+                                         "type":  "MODEL",
+                                         "link":  252
+                                     },
+                                     {
+                                         "localized_name":  "调度器",
+                                         "name":  "scheduler",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "scheduler"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "步数",
+                                         "name":  "steps",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "steps"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "降噪",
+                                         "name":  "denoise",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "denoise"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "Sigmas",
+                                          "name":  "SIGMAS",
+                                          "type":  "SIGMAS",
+                                          "links":  [
+                                                        256
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "BasicScheduler"
+                                     },
+                      "widgets_values":  [
+                                             "simple",
+                                             20,
+                                             1
+                                         ]
+                  },
+                  {
+                      "id":  125,
+                      "type":  "SamplerCustomAdvanced",
+                      "pos":  [
+                                  150,
+                                  5110
+                              ],
+                      "size":  [
+                                   230,
+                                   140
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  19,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "噪波",
+                                         "name":  "noise",
+                                         "type":  "NOISE",
+                                         "link":  253
+                                     },
+                                     {
+                                         "localized_name":  "引导器",
+                                         "name":  "guider",
+                                         "type":  "GUIDER",
+                                         "link":  254
+                                     },
+                                     {
+                                         "localized_name":  "采样器",
+                                         "name":  "sampler",
+                                         "type":  "SAMPLER",
+                                         "link":  255
+                                     },
+                                     {
+                                         "localized_name":  "西格玛",
+                                         "name":  "sigmas",
+                                         "type":  "SIGMAS",
+                                         "link":  256
+                                     },
+                                     {
+                                         "localized_name":  "Latent图像",
+                                         "name":  "latent_image",
+                                         "type":  "LATENT",
+                                         "link":  271
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "Latent",
+                                          "name":  "output",
+                                          "type":  "LATENT",
+                                          "links":  [
+                                                        280,
+                                                        281
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "降噪Latent",
+                                          "name":  "denoised_output",
+                                          "type":  "LATENT",
+                                          "links":  [
+
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "SamplerCustomAdvanced"
+                                     },
+                      "widgets_values":  [
+
+                                         ]
+                  },
+                  {
+                      "id":  126,
+                      "type":  "BasicGuider",
+                      "pos":  [
+                                  -260,
+                                  5080
+                              ],
+                      "size":  [
+                                   360,
+                                   60
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  18,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "模型",
+                                         "name":  "model",
+                                         "type":  "MODEL",
+                                         "link":  257
+                                     },
+                                     {
+                                         "localized_name":  "条件",
+                                         "name":  "conditioning",
+                                         "type":  "CONDITIONING",
+                                         "link":  270
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "引导器",
+                                          "name":  "GUIDER",
+                                          "type":  "GUIDER",
+                                          "links":  [
+                                                        254
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "BasicGuider"
+                                     },
+                      "widgets_values":  [
+
+                                         ]
+                  },
+                  {
+                      "id":  127,
+                      "type":  "UNETLoader",
+                      "pos":  [
+                                  -1490,
+                                  4940
+                              ],
+                      "size":  [
+                                   640,
+                                   90
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  6,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "UNet名称",
+                                         "name":  "unet_name",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "unet_name"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "数据类型",
+                                         "name":  "weight_dtype",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "weight_dtype"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "模型",
+                                          "name":  "MODEL",
+                                          "type":  "MODEL",
+                                          "links":  [
+                                                        283
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "UNETLoader",
+                                         "models":  [
+                                                        {
+                                                            "name":  "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+                                                            "url":  "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+                                                            "directory":  "diffusion_models"
+                                                        }
+                                                    ]
+                                     },
+                      "widgets_values":  [
+                                             "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+                                             "default"
+                                         ]
+                  },
+                  {
+                      "id":  128,
+                      "type":  "CLIPLoader",
+                      "pos":  [
+                                  -1490,
+                                  5090
+                              ],
+                      "size":  [
+                                   640,
+                                   120
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  7,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "CLIP名称",
+                                         "name":  "clip_name",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "clip_name"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "类型",
+                                         "name":  "type",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "type"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "设备",
+                                         "name":  "device",
+                                         "shape":  7,
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "device"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "CLIP",
+                                          "name":  "CLIP",
+                                          "type":  "CLIP",
+                                          "links":  [
+                                                        272
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "CLIPLoader",
+                                         "models":  [
+                                                        {
+                                                            "name":  "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+                                                            "url":  "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+                                                            "directory":  "text_encoders"
+                                                        }
+                                                    ]
+                                     },
+                      "widgets_values":  [
+                                             "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+                                             "minimax",
+                                             "default"
+                                         ]
+                  },
+                  {
+                      "id":  129,
+                      "type":  "RandomNoise",
+                      "pos":  [
+                                  -260,
+                                  4940
+                              ],
+                      "size":  [
+                                   360,
+                                   90
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  9,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "噪波随机种",
+                                         "name":  "noise_seed",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "noise_seed"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "噪波",
+                                          "name":  "NOISE",
+                                          "type":  "NOISE",
+                                          "links":  [
+                                                        253
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "RandomNoise"
+                                     },
+                      "widgets_values":  [
+                                             157368968253448,
+                                             "randomize"
+                                         ]
+                  },
+                  {
+                      "id":  130,
+                      "type":  "CreateVideo",
+                      "pos":  [
+                                  790,
+                                  5090
+                              ],
+                      "size":  [
+                                   270,
+                                   110
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  22,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "图像",
+                                         "name":  "images",
+                                         "type":  "IMAGE",
+                                         "link":  258
+                                     },
+                                     {
+                                         "localized_name":  "音频",
+                                         "name":  "audio",
+                                         "shape":  7,
+                                         "type":  "AUDIO",
+                                         "link":  259
+                                     },
+                                     {
+                                         "localized_name":  "帧率",
+                                         "name":  "fps",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "fps"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "bit_depth",
+                                         "name":  "bit_depth",
+                                         "shape":  7,
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "bit_depth"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "视频",
+                                          "name":  "VIDEO",
+                                          "type":  "VIDEO",
+                                          "links":  [
+                                                        260
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "CreateVideo"
+                                     },
+                      "widgets_values":  [
+                                             24,
+                                             8
+                                         ]
+                  },
+                  {
+                      "id":  131,
+                      "type":  "ComfyMathExpression",
+                      "pos":  [
+                                  -1450,
+                                  5940
+                              ],
+                      "size":  [
+                                   225,
+                                   74
+                               ],
+                      "flags":  {
+                                    "collapsed":  true
+                                },
+                      "order":  16,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "label":  "a",
+                                         "localized_name":  "values.a",
+                                         "name":  "values.a",
+                                         "type":  "FLOAT,INT,BOOLEAN",
+                                         "link":  261
+                                     },
+                                     {
+                                         "label":  "b",
+                                         "localized_name":  "values.b",
+                                         "name":  "values.b",
+                                         "shape":  7,
+                                         "type":  "FLOAT,INT,BOOLEAN",
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "表达式",
+                                         "name":  "expression",
+                                         "type":  "STRING",
+                                         "widget":  {
+                                                        "name":  "expression"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "浮点",
+                                          "name":  "FLOAT",
+                                          "type":  "FLOAT",
+                                          "links":  [
+
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "整数",
+                                          "name":  "INT",
+                                          "type":  "INT",
+                                          "links":  [
+                                                        275
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "布尔值",
+                                          "name":  "BOOL",
+                                          "type":  "BOOLEAN",
+                                          "links":  [
+
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "ComfyMathExpression"
+                                     },
+                      "widgets_values":  [
+                                             "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
+                                         ]
+                  },
+                  {
+                      "id":  132,
+                      "type":  "PrimitiveFloat",
+                      "pos":  [
+                                  -1480,
+                                  5830
+                              ],
+                      "size":  [
+                                   270,
+                                   70
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  10,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "值",
+                                         "name":  "value",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "value"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "浮点",
+                                          "name":  "FLOAT",
+                                          "type":  "FLOAT",
+                                          "links":  [
+                                                        261
+                                                    ]
+                                      }
+                                  ],
+                      "title":  "Float (Duration)",
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "PrimitiveFloat"
+                                     },
+                      "widgets_values":  [
+                                             5
+                                         ],
+                      "color":  "#322",
+                      "bgcolor":  "#533"
+                  },
+                  {
+                      "id":  136,
+                      "type":  "MiniMaxH3ReferenceToVideo",
+                      "pos":  [
+                                  -750,
+                                  4940
+                              ],
+                      "size":  [
+                                   410,
+                                   530
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  17,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "clip",
+                                         "name":  "clip",
+                                         "type":  "CLIP",
+                                         "link":  272
+                                     },
+                                     {
+                                         "localized_name":  "vae",
+                                         "name":  "vae",
+                                         "type":  "VAE",
+                                         "link":  273
+                                     },
+                                     {
+                                         "localized_name":  "audio_vae",
+                                         "name":  "audio_vae",
+                                         "type":  "VAE",
+                                         "link":  274
+                                     },
+                                     {
+                                         "label":  "ref_image_0",
+                                         "localized_name":  "ref_images.ref_image_0",
+                                         "name":  "ref_images.ref_image_0",
+                                         "shape":  7,
+                                         "type":  "IMAGE",
+                                         "link":  278
+                                     },
+                                     {
+                                         "label":  "ref_image_1",
+                                         "localized_name":  "ref_images.ref_image_1",
+                                         "name":  "ref_images.ref_image_1",
+                                         "shape":  7,
+                                         "type":  "IMAGE",
+                                         "link":  282
+                                     },
+                                     {
+                                         "label":  "ref_image_2",
+                                         "localized_name":  "ref_images.ref_image_2",
+                                         "name":  "ref_images.ref_image_2",
+                                         "shape":  7,
+                                         "type":  "IMAGE",
+                                         "link":  null
+                                     },
+                                     {
+                                         "label":  "ref_video_0",
+                                         "localized_name":  "ref_videos.ref_video_0",
+                                         "name":  "ref_videos.ref_video_0",
+                                         "shape":  7,
+                                         "type":  "IMAGE",
+                                         "link":  null
+                                     },
+                                     {
+                                         "label":  "ref_video_audio_0",
+                                         "localized_name":  "ref_video_audios.ref_video_audio_0",
+                                         "name":  "ref_video_audios.ref_video_audio_0",
+                                         "shape":  7,
+                                         "type":  "AUDIO",
+                                         "link":  null
+                                     },
+                                     {
+                                         "label":  "ref_audio_0",
+                                         "localized_name":  "ref_audios.ref_audio_0",
+                                         "name":  "ref_audios.ref_audio_0",
+                                         "shape":  7,
+                                         "type":  "AUDIO",
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "prompt",
+                                         "name":  "prompt",
+                                         "type":  "STRING",
+                                         "widget":  {
+                                                        "name":  "prompt"
+                                                    },
+                                         "link":  279
+                                     },
+                                     {
+                                         "localized_name":  "width",
+                                         "name":  "width",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "width"
+                                                    },
+                                         "link":  276
+                                     },
+                                     {
+                                         "localized_name":  "height",
+                                         "name":  "height",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "height"
+                                                    },
+                                         "link":  277
+                                     },
+                                     {
+                                         "localized_name":  "length",
+                                         "name":  "length",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "length"
+                                                    },
+                                         "link":  275
+                                     },
+                                     {
+                                         "localized_name":  "ref_image_size",
+                                         "name":  "ref_image_size",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "ref_image_size"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "positive",
+                                          "name":  "positive",
+                                          "type":  "CONDITIONING",
+                                          "links":  [
+                                                        270
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "Latent",
+                                          "name":  "LATENT",
+                                          "type":  "LATENT",
+                                          "links":  [
+                                                        271
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "MiniMaxH3ReferenceToVideo"
+                                     },
+                      "widgets_values":  [
+                                             "",
+                                             1344,
+                                             768,
+                                             124,
+                                             "match"
+                                         ]
+                  },
+                  {
+                      "id":  137,
+                      "type":  "LoadImage",
+                      "pos":  [
+                                  -930,
+                                  5630
+                              ],
+                      "size":  [
+                                   290,
+                                   330
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  11,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "图像",
+                                         "name":  "image",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "image"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "选择文件上传",
+                                         "name":  "upload",
+                                         "type":  "IMAGEUPLOAD",
+                                         "widget":  {
+                                                        "name":  "upload"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "图像",
+                                          "name":  "IMAGE",
+                                          "type":  "IMAGE",
+                                          "links":  [
+                                                        278
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "遮罩",
+                                          "name":  "MASK",
+                                          "type":  "MASK",
+                                          "links":  null
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "LoadImage"
+                                     },
+                      "widgets_values":  [
+                                             "red_superboy_on_city_roof.png",
+                                             "image"
+                                         ]
+                  },
+                  {
+                      "id":  138,
+                      "type":  "PrimitiveStringMultiline",
+                      "pos":  [
+                                  -1480,
+                                  6000
+                              ],
+                      "size":  [
+                                   370,
+                                   390
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  12,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "值",
+                                         "name":  "value",
+                                         "type":  "STRING",
+                                         "widget":  {
+                                                        "name":  "value"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "字符串",
+                                          "name":  "STRING",
+                                          "type":  "STRING",
+                                          "links":  [
+                                                        279
+                                                    ]
+                                      }
+                                  ],
+                      "title":  "Input Text (Prompt)",
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "PrimitiveStringMultiline"
+                                     },
+                      "widgets_values":  [
+                                             "Bold comic-book ink style, heavy linework, red and blue-black palette, night city. Use \u003cPicture 2\u003e and \u003cPicture 1\u003e as reference frames and \u003cAudio 1\u003e exactly as it is.\nCUT 1: top-down view of the little boy superhero on the rooftop — red cape fluttering in the wind, hands planted on his hips, freckles and a cocky grin as he looks straight up into the camera. The camera slowly descends toward him as he delivers his line — as he speaks, comic-book graphic overlay text word by word in sync with his voice: \"GET READY TO\" - \"MEET\" — \"YOUR\" — \"MAKER\" — huge jagged comic lettering, white with heavy black outlines and red drop shadows, tilted at scrappy angles, until the three words hang stacked in the air above him between his face and the lens.\nTRANSITION: a violent WHIP PAN off the rooftop that SMEARS the floating words away with it, motion-streaked —\nCUT 2: low hero angle on the colossal black mech-kaiju towering over the skyline as it rears back and unleashes a GIANT terrifying ROAR — jaws wide with fangs, red eyes and chest-core flaring blinding bright, blue lightning arcing off its head, the roar\u0027s shockwave rippling dust and rattling windows down the buildings, comic-style speed-lines and ink splatter bursting from the impact of the sound. It leans INTO the camera as the roar peaks. Hold on the roar."
+                                         ],
+                      "color":  "#322",
+                      "bgcolor":  "#533"
+                  },
+                  {
+                      "id":  139,
+                      "type":  "LoadImage",
+                      "pos":  [
+                                  -580,
+                                  5630
+                              ],
+                      "size":  [
+                                   290,
+                                   330
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  13,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "localized_name":  "图像",
+                                         "name":  "image",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "image"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "localized_name":  "选择文件上传",
+                                         "name":  "upload",
+                                         "type":  "IMAGEUPLOAD",
+                                         "widget":  {
+                                                        "name":  "upload"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "localized_name":  "图像",
+                                          "name":  "IMAGE",
+                                          "type":  "IMAGE",
+                                          "links":  [
+                                                        282
+                                                    ]
+                                      },
+                                      {
+                                          "localized_name":  "遮罩",
+                                          "name":  "MASK",
+                                          "type":  "MASK",
+                                          "links":  null
+                                      }
+                                  ],
+                      "properties":  {
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.30.0",
+                                         "Node name for S\u0026R":  "LoadImage"
+                                     },
+                      "widgets_values":  [
+                                             "mecha_dragon_lightning.png",
+                                             "image"
+                                         ]
+                  },
+                  {
+                      "id":  140,
+                      "type":  "MarkdownNote",
+                      "pos":  [
+                                  -1890,
+                                  5830
+                              ],
+                      "size":  [
+                                   300,
+                                   520
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  14,
+                      "mode":  0,
+                      "inputs":  [
+
+                                 ],
+                      "outputs":  [
+
+                                  ],
+                      "title":  "Note: Size Settings Reference",
+                      "properties":  {
+
+                                     },
+                      "widgets_values":  [
+                                             "| megapixels | Aspect | Output (multiple=32) |\n|---|---|---|\n| 0.2 | 16:9 | 608 x 352 |\n| 0.3 | 16:9 | 736 x 416 |\n| 0.4 | 16:9 | 864 x 480 |\n| 0.5 | 16:9 | 960 x 544 |\n| 0.6 | 16:9 | 1056 x 608 |\n| 0.7 | 16:9 | 1152 x 640 |\n| 0.8 | 16:9 | 1216 x 672 |\n| 0.9 | 16:9 | 1280 x 736 |\n| 0.98 | 16:9 | 1344 x 768 |\n| 1.0 | 16:9 | 1376 x 768 |\n| 1.2 | 16:9 | 1504 x 832 |\n| 1.5 | 16:9 | 1664 x 928 |\n| 1.8 | 16:9 | 1824 x 1024 |\n| 2.0 | 16:9 | 1920 x 1088 |\n"
+                                         ],
+                      "color":  "#222",
+                      "bgcolor":  "#000"
+                  },
+                  {
+                      "id":  141,
+                      "type":  "SpectrumApplyMiniMaxH3",
+                      "pos":  [
+                                  -790,
+                                  4900
+                              ],
+                      "size":  [
+                                   420,
+                                   390
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  8,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "name":  "model",
+                                         "type":  "MODEL",
+                                         "link":  283
+                                     },
+                                     {
+                                         "name":  "enabled",
+                                         "type":  "BOOLEAN",
+                                         "widget":  {
+                                                        "name":  "enabled"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "blend_weight",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "blend_weight"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "degree",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "degree"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "ridge_lambda",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "ridge_lambda"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "window_size",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "window_size"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "flex_window",
+                                         "type":  "FLOAT",
+                                         "widget":  {
+                                                        "name":  "flex_window"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "warmup_steps",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "warmup_steps"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "tail_actual_steps",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "tail_actual_steps"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "max_history",
+                                         "type":  "INT",
+                                         "widget":  {
+                                                        "name":  "max_history"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "debug",
+                                         "type":  "BOOLEAN",
+                                         "widget":  {
+                                                        "name":  "debug"
+                                                    },
+                                         "link":  null
+                                     },
+                                     {
+                                         "name":  "history_storage",
+                                         "type":  "COMBO",
+                                         "widget":  {
+                                                        "name":  "history_storage"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "name":  "model",
+                                          "type":  "MODEL",
+                                          "links":  [
+                                                        252,
+                                                        257
+                                                    ]
+                                      }
+                                  ],
+                      "properties":  {
+                                         "Node name for S\u0026R":  "SpectrumApplyMiniMaxH3",
+                                         "source":  "https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3",
+                                         "tested_commit":  "8bfc235cb3910c73964277e0316ec875f4b2c011"
+                                     },
+                      "widgets_values":  [
+                                             true,
+                                             0.5,
+                                             4,
+                                             0.1,
+                                             2,
+                                             0.75,
+                                             5,
+                                             1,
+                                             8,
+                                             true,
+                                             "system_ram"
+                                         ]
+                  },
+                  {
+                      "id":  142,
+                      "type":  "MarkdownNote",
+                      "pos":  [
+                                  -800,
+                                  5350
+                              ],
+                      "size":  [
+                                   610,
+                                   380
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  0,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "name":  "text",
+                                         "type":  "STRING",
+                                         "widget":  {
+                                                        "name":  "text"
+                                                    },
+                                         "link":  null
+                                     }
+                                 ],
+                      "outputs":  [
+
+                                  ],
+                      "properties":  {
+                                         "Node name for S\u0026R":  "MarkdownNote"
+                                     },
+                      "widgets_values":  [
+                                             "## Spectrum 淇濆畧棰勮\\n\\n姝よ妭鐐规槸杩戜技鍔犻€燂紝涓嶄繚璇侀€愪綅涓€鑷淬€俁ES multistep銆?0 姝ユ椂锛屽綋鍓嶄繚瀹堥厤缃€氬父涓?14 娆＄湡瀹炶绠椾笌 6 娆￠娴嬨€俓n\\n- enabled 鍙殢鏃跺叧闂苟鍥炲埌鍘熺敓妯″瀷璺緞\\n- 鏅€氶暅澶村厛鐢?system_ram\\n- 浜虹墿鐗瑰啓銆佸揩閫熷姩浣溿€佺溂鐫涖€佹墜閮ㄥ拰鍙ｅ瀷闀滃ご寤鸿鍚?seed 鍘熺敓澶嶆牳\\n- 鍚姩 ComfyUI 鏃跺彟鍔?--use-sage-attention 鎵嶄細鍚敤 SageAttention\\n- 璇︾粏瀹炴祴瑙佸悓鐩綍璇存槑鏂囨。"
+                                         ]
+                  }
+              ],
+    "links":  [
+                  [
+                      250,
+                      120,
+                      0,
+                      121,
+                      1,
+                      "VAE"
+                  ],
+                  [
+                      251,
+                      119,
+                      0,
+                      122,
+                      1,
+                      "VAE"
+                  ],
+                  [
+                      252,
+                      141,
+                      0,
+                      124,
+                      0,
+                      "MODEL"
+                  ],
+                  [
+                      253,
+                      129,
+                      0,
+                      125,
+                      0,
+                      "NOISE"
+                  ],
+                  [
+                      254,
+                      126,
+                      0,
+                      125,
+                      1,
+                      "GUIDER"
+                  ],
+                  [
+                      255,
+                      123,
+                      0,
+                      125,
+                      2,
+                      "SAMPLER"
+                  ],
+                  [
+                      256,
+                      124,
+                      0,
+                      125,
+                      3,
+                      "SIGMAS"
+                  ],
+                  [
+                      257,
+                      141,
+                      0,
+                      126,
+                      0,
+                      "MODEL"
+                  ],
+                  [
+                      258,
+                      122,
+                      0,
+                      130,
+                      0,
+                      "IMAGE"
+                  ],
+                  [
+                      259,
+                      121,
+                      0,
+                      130,
+                      1,
+                      "AUDIO"
+                  ],
+                  [
+                      260,
+                      130,
+                      0,
+                      92,
+                      0,
+                      "VIDEO"
+                  ],
+                  [
+                      261,
+                      132,
+                      0,
+                      131,
+                      0,
+                      "FLOAT"
+                  ],
+                  [
+                      270,
+                      136,
+                      0,
+                      126,
+                      1,
+                      "CONDITIONING"
+                  ],
+                  [
+                      271,
+                      136,
+                      1,
+                      125,
+                      4,
+                      "LATENT"
+                  ],
+                  [
+                      272,
+                      128,
+                      0,
+                      136,
+                      0,
+                      "CLIP"
+                  ],
+                  [
+                      273,
+                      119,
+                      0,
+                      136,
+                      1,
+                      "VAE"
+                  ],
+                  [
+                      274,
+                      120,
+                      0,
+                      136,
+                      2,
+                      "VAE"
+                  ],
+                  [
+                      275,
+                      131,
+                      1,
+                      136,
+                      12,
+                      "INT"
+                  ],
+                  [
+                      276,
+                      115,
+                      0,
+                      136,
+                      10,
+                      "INT"
+                  ],
+                  [
+                      277,
+                      115,
+                      1,
+                      136,
+                      11,
+                      "INT"
+                  ],
+                  [
+                      278,
+                      137,
+                      0,
+                      136,
+                      3,
+                      "IMAGE"
+                  ],
+                  [
+                      279,
+                      138,
+                      0,
+                      136,
+                      9,
+                      "STRING"
+                  ],
+                  [
+                      280,
+                      125,
+                      0,
+                      122,
+                      0,
+                      "LATENT"
+                  ],
+                  [
+                      281,
+                      125,
+                      0,
+                      121,
+                      0,
+                      "LATENT"
+                  ],
+                  [
+                      282,
+                      139,
+                      0,
+                      136,
+                      4,
+                      "IMAGE"
+                  ],
+                  [
+                      283,
+                      127,
+                      0,
+                      141,
+                      0,
+                      "MODEL"
+                  ]
+              ],
+    "groups":  [
+                   {
+                       "id":  1,
+                       "title":  "Models",
+                       "bounding":  [
+                                        -1520,
+                                        4840,
+                                        700,
+                                        670
+                                    ],
+                       "color":  "#3f789e",
+                       "flags":  {
+
+                                 }
+                   },
+                   {
+                       "id":  2,
+                       "title":  "Sampling",
+                       "bounding":  [
+                                        -280,
+                                        4840,
+                                        690,
+                                        670
+                                    ],
+                       "color":  "#3f789e",
+                       "flags":  {
+
+                                 }
+                   },
+                   {
+                       "id":  3,
+                       "title":  "Conditioning",
+                       "bounding":  [
+                                        -790,
+                                        4840,
+                                        480,
+                                        670
+                                    ],
+                       "color":  "#3f789e",
+                       "flags":  {
+
+                                 }
+                   },
+                   {
+                       "id":  4,
+                       "title":  "Decoding and create video",
+                       "bounding":  [
+                                        440,
+                                        4840,
+                                        670,
+                                        670
+                                    ],
+                       "color":  "#3f789e",
+                       "flags":  {
+
+                                 }
+                   },
+                   {
+                       "id":  5,
+                       "title":  "User Inputs",
+                       "bounding":  [
+                                        -1520,
+                                        5540,
+                                        1930,
+                                        900
+                                    ],
+                       "color":  "#3f789e",
+                       "flags":  {
+
+                                 }
+                   }
+               ],
+    "config":  {
+
+               },
+    "extra":  {
+                  "ds":  {
+                             "scale":  0.25081967213114753,
+                             "offset":  [
+                                            3323.3333333333335,
+                                            -4063.813071895425
+                                        ]
+                         },
+                  "frontendVersion":  "1.47.11",
+                  "VHS_latentpreview":  false,
+                  "VHS_latentpreviewrate":  0,
+                  "VHS_MetadataImage":  true,
+                  "VHS_KeepIntermediate":  true,
+                  "0246.VERSION":  [
+                                       0,
+                                       0,
+                                       4
+                                   ]
+              },
+    "version":  0.4
+}
