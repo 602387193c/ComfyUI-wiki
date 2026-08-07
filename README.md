@@ -76,6 +76,7 @@
 | 项目名称及网址 | 介绍 | 相关资源 |
 | --- | --- | --- |
 | [MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)<br>[![stars](https://badgen.net/github/stars/MiniMax-AI/MiniMax-H3)](https://github.com/MiniMax-AI/MiniMax-H3/stargazers)<br> | 【全模态视频生成】MiniMax开源，33B Omni-Transformer + Qwen3-VL-32B编码器，支持文/图/视频/音频参考生成带原生立体声的视频（4-15秒、24fps、768p，可2K重生成），支持T2VA/FL2VA/Ref2VA，ComfyUI原生支持。 | - 模型: [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) / [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)<br>- 加速: [Sana Sol-Engine H3](https://nvlabs.github.io/Sana/Sol-Engine/H3/)（NVIDIA）<br>- 加速插件: [ComfyUI-SolAttn_triton](https://github.com/kijai/ComfyUI-SolAttn_triton) by kijai<br>- 本地实测: [MiniMax-H3本地加速实测-SageAttention与Spectrum](docs/MiniMax-H3本地加速实测-SageAttention与Spectrum.md) |
+| [H3官方Skills](https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills)<br> | 【官方技能库】9个官方skill：`h3-prompt-writing`（T2VA/I2VA/FL2VA/L2VA/Ref2VA五种模式提示词写作）+ 8个风格化视频生成skill（极简产品广告/3D动画短片/纸艺定格讲解/品牌推广/MV歌词字幕/双人游戏开场/纸张拼贴讲解/手绘实景混合）。 | - 安装: `npx skills add https://github.com/MiniMax-AI/MiniMax-H3 --skill <skill名>`<br>- 状态: 积极维护中，提交PR优化/新增skill有API额度奖励 |
 
 ## 🖼️图像生成、编辑
 
