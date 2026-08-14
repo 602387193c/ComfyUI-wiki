@@ -71,6 +71,7 @@
 | --- | --- | --- |
 | [LTX-Video](https://github.com/Lightricks/LTX-Video)<br>[![stars](https://badgen.net/github/stars/Lightricks/LTX-Video)](https://github.com/Lightricks/LTX-Video/stargazers)<br> | 【视频生成】DiT视频生成模型，支持t2v/i2v/多关键帧条件/视频扩展/视频转视频。论文: [arxiv 2501.00103](https://arxiv.org/abs/2501.00103) | - HF: [Lightricks/LTX-Video](https://huggingface.co/Lightricks/LTX-Video)<br>- ComfyUI: [ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)<br>- 工具: [ComfyUI-LTXTricks](https://github.com/logtd/ComfyUI-LTXTricks) |
 | [LTX-2.3-Multiple-Subject-Reference](https://github.com/liconstudio/ComfyUI-Licon-MSR)<br>[![stars](https://badgen.net/github/stars/liconstudio/ComfyUI-Licon-MSR)](https://github.com/liconstudio/ComfyUI-Licon-MSR/stargazers)<br> | 【多主体参考/视频生成】基于LTX 2.3的MSR LoRA，支持多参考图保持角色/物体一致性。 | - HF模型: [LiconStudio/LTX-2.3-Multiple-Subject-Reference](https://huggingface.co/LiconStudio/LTX-2.3-Multiple-Subject-Reference)<br>- IC-LoRA: [LTX-2.3-22B-IC-LoRA-Ingredients](https://huggingface.co/Lightricks/LTX-2.3-22b-IC-LoRA-Ingredients)<br>- ComfyUI插件: [ComfyUI-Licon-MSR](https://github.com/liconstudio/ComfyUI-Licon-MSR)<br>- 备注: 节点`Licon/MSR`，含示例工作流 |
+| [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | 【视频生成/世界模型】Lightricks开放权重统一音视频生成模型，支持i2v/t2v/v2v及音频生成，10秒720P视频约6.8秒生成，多语言（含中文）。 | - HF模型: [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)<br>- ComfyUI: [LTX-2.5工作流示例](https://docs.comfy.org/tutorials/video/ltx/ltx-2-5)<br>- 论文: [arxiv 2601.03233](https://arxiv.org/abs/2601.03233)<br>- 许可: 自定义（中小企业免费） |
 
 ### 🎥MiniMax-H3系列
 
@@ -110,6 +111,7 @@
 
 | 项目名称及网址 | 介绍 | 备注 |
 | --- | --- | --- |
+| [MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3) | 【音乐生成】MiniMax开放权重音乐模型，按歌词+描述生成最长5分钟完整歌曲，支持人声（含日文）。 | ComfyUI原生支持<br>教程: [MiniMax Music 3 in ComfyUI](https://docs.comfy.org/tutorials/audio/minimax/minimax-music-3) |
 | [Higgs TTS 3 4B](https://huggingface.co/bosonai/higgs-tts-3-4b) | 【TTS/语音克隆】BosonAI 4B多语种可控TTS，支持情绪、风格、停顿等控制。 | HF: bosonai |
 | [MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS)<br>[![stars](https://badgen.net/github/stars/OpenMOSS/MOSS-TTS)](https://github.com/OpenMOSS/MOSS-TTS/stargazers)<br> | 【TTS】OpenMOSS开源文本转语音项目。 |  |
 | [LongCat-AudioDiT](https://github.com/meituan-longcat/LongCat-AudioDiT)<br>[![stars](https://badgen.net/github/stars/meituan-longcat/LongCat-AudioDiT)](https://github.com/meituan-longcat/LongCat-AudioDiT/stargazers)<br> | 【TTS/语音克隆】美团开源，波形潜空间里的扩散式文本转语音；支持TTS和zero-shot voice cloning。 | HF模型: [meituan-longcat](https://huggingface.co/meituan-longcat) |
