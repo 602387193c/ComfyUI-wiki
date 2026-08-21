@@ -22,7 +22,7 @@
 # 📊工作流分享
 
 我把最实用的工作流（workflow）都给毫无保留地免费分享给所有需要的人：
-## [点击查看workflows文件夹](./pysssss-workflows)
+## [点击查看workflows文件夹](./workflows)
 
 # 👍custom nodes排行榜
 ## 🔍 亲测！强力推荐！
