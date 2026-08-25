@@ -1,0 +1,6 @@
+interface:
+  display_name: "凡人修仙传2d转绘"
+  short_description: "先锁定风格，再批量转绘原视频"
+  default_prompt: "使用 $fanren-xiuxianzhuan-2d-zhuanhui 将这批原视频按统一风格转绘并完成原音替换与 QC。"
+policy:
+  allow_implicit_invocation: true
