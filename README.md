@@ -106,7 +106,9 @@
 | --- | --- | --- |
 | [Hy3](https://huggingface.co/tencent/Hy3) | 【腾讯/Hunyuan】295B MoE，21B激活参数，面向推理、Agent和长上下文任务。 | HF: tencent |
 | [Qwen3.6-27B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-27B-NVFP4) | 【NVIDIA/通义】Qwen3.6-27B 的 NVFP4 量化版，面向推理部署。 | HF: nvidia |
+| [Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | 【阿里/Qwen】Qwen4 架构开源基础模型，125B 总参约 6B 激活的稀疏 MoE，开放权重。 | HF: Qwen |
 | [GLM-5.2](https://huggingface.co/zai-org/GLM-5.2) | 【智谱/Z.ai】GLM 系列大语言模型。 | HF: zai-org |
+| [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) | 【智谱/Z.ai】320B 总参 / 18B 激活的原生多模态 MoE，1M token 上下文，GLM-5 的 Flash 版（此前代号 OX-Alpha）。 | HF: zai-org |
 | [Kimi-K2.7-Code](https://huggingface.co/moonshotai/Kimi-K2.7-Code) | 【Moonshot】Kimi 代码模型。 | HF: moonshotai |
 | [MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | 【MiniMax】MiniMax 开源大语言模型。 | HF: MiniMaxAI |
 | [DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | 【DeepSeek】DeepSeek 开源大语言模型。 | HF: deepseek-ai |
